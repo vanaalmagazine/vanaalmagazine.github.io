@@ -1,0 +1,208 @@
+/*Estilos footer modo dispositivo*/
+footer {
+    font-weight: 600;
+    font-style: normal;
+    background: #1b1b1b;
+    color: #999;
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  
+  footer .contenedorfooter {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40% 60%;
+    row-gap: 10px;
+    margin-bottom: 40px;
+  }
+  
+  footer .contenedorfooter .logotipofooter {
+    display: flex;
+    flex-direction: column;
+    font-family: "BodoniMT";
+    text-align: center;
+  }
+  
+  footer .contenedorfooter .logotipofooter h2 {
+    font-size: 22px;
+  }
+  
+  footer .contenedorfooter .logotipofooter p {
+    font-size: 14px;
+    text-decoration: overline;
+  }
+  
+  footer .contenedorfooter .logotipofooter a {
+    text-decoration: none;
+    font-family: BodoniMT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #999;
+    padding-top: 3px;
+  }
+  
+  footer .contenedorfooter .redessociales {
+    justify-self: center;
+    width: 120px;
+  }
+  
+  footer .contenedorfooter .redessociales h3 {
+    font-family: BodoniMT;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  
+  footer .contenedorfooter .redessociales {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 16px;
+  }
+  
+  footer .contenedorfooter .redessociales a {
+    display: flex;
+    flex-direction: row;
+    color: #999;
+    align-items: center;
+  }
+  
+  footer .contenedorfooter .redessociales p{
+    font-family: BodoniMT;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+  
+  .icon_ion_footer{
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  
+  footer .contenedorfooter .feedinstagram {
+    grid-column: 1/3;
+    width: 250px;
+    margin-bottom: 25px;
+    justify-self: center;
+    margin-top: 15px;
+  }
+  
+  footer .contenedorfooter .feedinstagram img {
+    width: 250px;
+    border-radius: 15px;
+  }
+  
+  footer .contenedorfooter .feedinstagram h2 {
+    font-family: BodoniMT;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+  }
+  
+  footer .copyright {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  footer .copyright p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    margin: auto;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+  }
+  
+  /*Estilos header y footer modo pc*/
+  @media (max-width: 315px) {
+    footer {
+      min-width: 270px;
+    }
+  
+    footer .copyright p {
+      text-align: center;
+    }
+  
+    .logotipo {
+      width: 135px;
+      height: 35px;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    footer {
+      max-width: 1920px;
+      margin: auto;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    footer {
+      padding: 60px;
+      padding-bottom: 20px;
+    }
+  
+    footer .contenedorfooter {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-columns: 30% 30% 40%;
+    }
+  
+    footer .contenedorfooter .logotipofooter {
+      text-align: left;
+      padding-left: 20%;
+    }
+  
+    footer .contenedorfooter .logotipofooter h2{
+      font-size: 23px;
+    }
+  
+    footer .contenedorfooter .logotipofooter p{
+      font-size: 18px;
+      padding-left: 10px;
+    }
+  
+  
+    footer .contenedorfooter .redessociales {
+      padding-left: 0%;
+      width: 100%;
+    }
+  
+    .icon_ion_footer{
+      font-size: 19px;
+      margin-right: 8px;
+    }
+  
+    footer .contenedorfooter .feedinstagram {
+      grid-column: 3;
+      width: 100%;
+      padding-left: 20%;
+      margin-top: 0;
+    }
+  
+    footer .copyright {
+      margin-top: 20px;
+    }
+  
+    footer .copyright p{
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 310px) {
+    .contenedor {
+      min-width: 310px;
+    }
+  }
+  

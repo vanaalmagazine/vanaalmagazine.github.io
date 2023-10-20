@@ -1,0 +1,57 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(slider.css);
+@import url(slider2.css);
+@import url(inicio.css);
+@import url(slidernewwork.css);
+
+@font-face {
+  font-family: "Gothic";
+  src: url("../font/Tarocco.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Jane";
+  src: url("../font/JaneLightRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BodoniMT";
+  src: url("../font/BodoniMT.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Rached";
+  src: url("../font/Rached.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Colgent";
+  src: url("../font/Colgent.woff") format("woff");
+}
+
+
+/*Estilos header modo dispositivo*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  user-select: none;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+  background-color: rgb(236, 236, 236);
+  border-radius: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(16, 163, 114);
+  border-radius: 15px;
+}

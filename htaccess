@@ -1,0 +1,49 @@
+#Quitar .html Url amigable
+RewriteBase /
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html
+
+#Bloquear bots
+RewriteEngine on
+RewriteCond %{HTTP_HOST} !^$
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTPS}s ^on(s)|
+RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Prevenir ataques DDoS
+<FilesMatch "^(xmlrpc\.php)">
+Order Deny,Allow
+# Allow from xx.xx.xx.xxx
+# Allow from yy.yy.yy.yyy
+Deny from all
+</FilesMatch>
+
+# Habilitar el almacenamiento en caché
+<IfModule mod_expires.c>
+  ExpiresActive On
+  # Configura la caché para los tipos de archivo comunes
+  ExpiresByType image/jpeg "access plus 31536000 seconds"
+  ExpiresByType image/jpg "access plus 31536000 seconds"
+  ExpiresByType image/png "access plus 31536000 seconds"
+  ExpiresByType text/css "access plus 31536000 seconds"
+  ExpiresByType text/javascript "access plus 31536000 seconds"
+  ExpiresByType application/javascript "access plus 31536000 seconds"
+  ExpiresByType application/x-javascript "access plus 31536000 seconds"
+</IfModule>
+
+# Configurar la caché para archivos específicos (ejemplo: favicon.ico)
+<FilesMatch "\.(ico)$">
+  Header set Cache-Control "public, max-age=157680000"
+</FilesMatch>
+
+#No permitir el acceso a htacces
+order allow,deny
+deny from all
+
+#Prevenir hotlinking
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} !^http://(.+\.)?webempresa\.com/ [NC]
+RewriteCond %{HTTP_REFERER} !^$
+RewriteRule .*\.(jpg|gif|bmp|png)$ https://img.freepik.com/vector-premium/icono-senal-stop-icono-stop-ilustracion-vectorial_149152-849.jpg?w=826 [L]

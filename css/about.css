@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "BodoniMT";
+  src: url("../font/BodoniMT.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.88);
+}
+
+body {
+  background-color: rgb(244, 246, 247);
+}
+
+.contenedorabout {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenidoabout {
+  text-align: center;
+  background-color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-radius: 35px;
+  box-shadow: 3px 3px 10px rgba(134, 135, 136, 0.1);
+}
+
+.contenidoabout h2 {
+  font-size: 50px;
+  font-family: "BodoniMT";
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.contenidoabout p {
+  font-family: "BodoniMT";
+  font-size: 16px;
+  text-decoration: overline;
+}
+
+#about {
+  max-width: 630px;
+  display: block;
+  margin: auto;
+  text-align: justify;
+  margin-top: 15px;
+  text-decoration: none;
+  color: rgb(70, 70, 70);
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 0.7px;
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+@media (max-width: 315px) {
+  .contenedorabout {
+    min-width: 270px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  header .submenuitems {
+    background: rgba(255, 255, 255, 0.88);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .contenidoabout {
+    max-width: 800px;
+    padding: 50px;
+    padding-bottom: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
+    box-shadow: none;
+    background-color: rgb(244, 246, 247);
+  }
+
+  .contenidoabout h2 {
+    font-size: 80px;
+  }
+
+  .contenidoabout p {
+    font-size: 20px;
+  }
+
+  #about {
+    margin-top: 50px;
+  }
+}
