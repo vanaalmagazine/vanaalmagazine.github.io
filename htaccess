@@ -52,7 +52,7 @@ RewriteRule .*\.(jpg|gif|bmp|png)$ https://img.freepik.com/vector-premium/icono-
 #Redireccionamiento
 RewriteEngine On
 
-RewriteCond %{HTTP_HOST} ^ANTIGUO-dominio.es$ [NC]
+RewriteCond %{HTTP_HOST} ^vanaal.amigautier.uss$ [NC]
 
 RewriteRule ^(.)$ https://www.vanaal.us/$1 [R=301,L]
 RewriteCond %{HTTP_HOST} ^www.vanaal.amigautier.us$ [NC]
