@@ -47,13 +47,3 @@ RewriteEngine On
 RewriteCond %{HTTP_REFERER} !^http://(.+\.)?webempresa\.com/ [NC]
 RewriteCond %{HTTP_REFERER} !^$
 RewriteRule .*\.(jpg|gif|bmp|png)$ https://img.freepik.com/vector-premium/icono-senal-stop-icono-stop-ilustracion-vectorial_149152-849.jpg?w=826 [L]
-
-
-#Redireccionamiento 301
-RewriteEngine On
-
-RewriteCond %{HTTP_HOST} ^vanaal.amigautier.us$ [NC]
-RewriteRule ^(.*)$ https://www.vanaal.us/$1 [R=301,L]
-
-RewriteCond %{HTTP_HOST} ^www.vanaal.amigautier.us$ [NC]
-RewriteRule ^(.*)$ https://www.vanaal.us/$1 [L,R=301]
