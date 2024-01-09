@@ -63,7 +63,7 @@
 }
 
 .textonewwork p{
-  width: 50%;
+  width: 60%;
   font-family: Colgent;
   letter-spacing: 1.2px;
   font-size: 14px;
@@ -114,6 +114,7 @@
     max-width: 1520px;
     height: 850px;
     display: flex;
+    margin-bottom: 70px;
   }
 
   .contenedor_slider_newworks{

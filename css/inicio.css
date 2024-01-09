@@ -18,7 +18,6 @@ body.noscroll2 {
   overflow: hidden;
   margin: 7px;
   margin-top: 30px;
-  margin-bottom: 30px;
   background-color: rgb(255, 255, 255);
   
 }
@@ -118,7 +117,6 @@ body.noscroll2 {
   padding-bottom: 10px;
   width: 100%;
   max-width: 1650px;
-  margin-top: 10px;
 }
 
 .carrusel_scroll_index .cont_carrusel_scroll {
@@ -294,7 +292,7 @@ button {
     height: 700px;
     margin-left: auto;
     margin-right:  auto;
-    margin-top: 30px;
+    margin-top: 60px;
   }
 
   .carrusel_scroll_index .cont_carrusel_scroll h2 {
