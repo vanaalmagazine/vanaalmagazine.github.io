@@ -101,6 +101,8 @@
   padding: 0;
   color: white;
   margin-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .txtslider_index a {
