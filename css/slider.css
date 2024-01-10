@@ -41,7 +41,7 @@
   height: 40px;
   background-color: rgba(255, 255, 255, 0.651);
   color: rgba(18, 18, 19, 0.616);
-  top: 50%;
+  top: 53%;
   transform: translateY(-50%);
   border-radius: 50%;
   font-size: 25px;
@@ -74,14 +74,12 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  padding-left: 25px;
-  padding-right: 25px;
   z-index: 1;
 }
 
 .txtslider_index h2 {
   font-family: Rached;
-  font-size: 27px;
+  font-size: 33px;
   letter-spacing: 5px;
   color: #fff;
   margin-top: 28%;
