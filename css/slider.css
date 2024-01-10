@@ -3,7 +3,7 @@
   margin: auto;
   width: 100%;
   max-width: 1920px;
-  max-height: 90vh;
+  max-height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -11,15 +11,20 @@
 .slider_index {
   display: flex;
   width: 400%;
-  height: 90vh;
+  height: 100vh;
   margin-left: -100%;
 }
 
-.degradado_slider{
+.degradado_slider {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.185), rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.658));
+  background: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.185),
+    rgba(0, 0, 0, 0.329),
+    rgba(0, 0, 0, 0.658)
+  );
   z-index: 0;
 }
 
@@ -30,7 +35,7 @@
 .slider_index img {
   display: block;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   object-fit: cover;
 }
 
@@ -50,6 +55,7 @@
   cursor: pointer;
   padding-top: 4px;
   z-index: 1;
+  display: none;
 }
 
 .slider_btn_prev_index {
@@ -173,7 +179,7 @@ section {
 /*Dots*/
 .contenedor_slider_index .dots {
   position: absolute;
-  bottom: 20px;
+  bottom: 60px;
   color: #fff;
   left: 0;
   width: 100%;
@@ -241,13 +247,9 @@ section {
 }
 
 @media (min-width: 760px) {
-
-  .contenedor_slider_index {
-    max-height: 100vh;
-  }
-  
-  .slider_index, .slider_index img {
-    height: 100vh;
+  .slider_btn_prev_index,
+  .slider_btn_next_index {
+    display: block;
   }
 
   .slider_btn_prev_index {
@@ -290,6 +292,10 @@ section {
 
   /*Dots*/
   /*Dots*/
+
+  .contenedor_slider_index .dots{
+      bottom: 30px;
+  }
 
   .contenedor_slider_index .dots li {
     width: 100px;
