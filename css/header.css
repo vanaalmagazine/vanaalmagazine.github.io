@@ -432,8 +432,8 @@ header .container_header .v-center .item-center .menu{
   }
 
   header .logotipo a img {
-    width: 140px;
-    height: 35px;
+    width: auto;
+    height: 40px;
     margin-left: 5px;
   }
 
