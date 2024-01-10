@@ -1,6 +1,6 @@
 window.sr = ScrollReveal();
     //Index
-   /* sr.reveal('.contenedor_slider_index h2', {
+  /*  sr.reveal('.contenedor_slider_index h2', {
         duration: 2000,
         origin: 'right',
         distance: '-100px'
@@ -16,7 +16,7 @@ window.sr = ScrollReveal();
         duration: 2000,
         origin: 'top',
         distance: '-100px'
-    }); */
+    });*/
 
 
     sr.reveal('#textobanner h2', {
