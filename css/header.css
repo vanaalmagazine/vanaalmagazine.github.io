@@ -575,7 +575,7 @@ header .container_header .v-center .item-center .menu{
 
   header .menu > ul > li > a {
     line-height: 50px;
-    height: 50px;
+    height: 65px;
     padding: 0 50px 0 15px;
     display: block;
     font-weight: bolder;
@@ -808,7 +808,7 @@ header .container_header .v-center .item-center .menu{
 
   .contenedor_redes_sociales .redes_sociales a {
     text-decoration: none;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
   }
 
   .contenedor_redes_sociales .redes_sociales a,

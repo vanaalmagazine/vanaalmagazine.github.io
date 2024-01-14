@@ -11,6 +11,337 @@ body.noscroll2 {
   overflow: hidden;
 }
 
+/*Comienzo grid scroll fotos 2*/
+
+.paquetes {
+  max-width: 1920px;
+  margin: auto;
+  position: relative;
+}
+
+.paquetes::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/header/arquitectura/header-fondo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: brightness(0.9);
+  z-index: -1; 
+}
+
+.texto_paquetes {
+  color: white;
+  height: 100%;
+  width: 85%;
+  max-width: 450px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  margin-left: 7%;
+}
+
+.texto_paquetes h1,
+.texto_paquetes h2 {
+  font-family: Rached;
+  font-size: 33px;
+  letter-spacing: 3px;
+  color: #fff;
+  font-style: italic;
+}
+
+.texto_paquetes h2 {
+  text-decoration: underline;
+}
+
+.texto_paquetes_subtitulo{
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.texto_paquetes p,
+.texto_paquetes ol,
+.ver-mas {
+  font-family: Colgent;
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.texto_paquetes ol {
+  letter-spacing: 0px;
+  padding-left: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  margin-top: 15px;
+}
+
+.ver-mas {
+  cursor: pointer;
+  color: rgb(255, 255, 255); 
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.ver-mas:hover{
+  color: #d2d6d4;
+}
+
+.texto_paquetes ol li {
+  list-style-type: disc;
+}
+
+.carrusel_scroll {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  width: 96, 5vw;
+  padding-bottom: 30px;
+  cursor: grab;
+  user-select: none;
+}
+
+.carrusel_scroll.grabbing {
+  cursor: grabbing;
+}
+
+.cont_carrusel_scroll {
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  list-style: none;
+  margin-left: 20px; 
+}
+
+.button-next1{
+  position: absolute;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  text-align: center;
+  font-family: monospace;
+  padding-top: 0px;
+  z-index: 1;
+}
+
+.cont_carrusel_scroll_1 {
+  display: flex;
+}
+
+.cont_carrusel_scroll::-webkit-scrollbar {
+  height: 6px;
+  background-color: rgb(172, 172, 172);
+  border-radius: 15px;
+}
+
+.cont_carrusel_scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(6, 160, 96);
+  border-radius: 15px;
+}
+
+.card_carrusel {
+  margin-right: 20px;
+  width: 100%;
+  min-width: 350px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  position: relative;
+}
+
+.card_carruseltitulo {
+  height: 30px;
+  padding-left: 10px;
+}
+
+.card_carruseltitulo p {
+  font-family: Colgent;
+  letter-spacing: 0.1em;
+  color: #fff;
+  font-size: 16px;
+}
+
+.card_carrusel_img {
+  height: 90%;
+  max-height: 350px;
+  overflow: hidden;
+  box-shadow: 6px 6px 10px rgba(30, 30, 31, 0.479);
+  border-radius: 10px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.carrusel_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carrusel_img:hover {
+  transform: scale(1.04);
+}
+
+.card_carrusel_description {
+  height: 150px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.card_carrusel_description p {
+  color: rgb(255, 255, 255);
+  margin-bottom: 13px;
+  font-family: Colgent;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  line-height: 1.4;
+}
+
+.card_carrusel_description .description_costos {
+  color: rgb(255, 255, 255);
+}
+
+.card_carrusel_description .description_costos del {
+  text-decoration: line-through;
+  color: rgb(218, 218, 218);
+}
+
+.card_carrusel_description .rebaja{
+  color: rgb(243, 207, 107);
+  font-size: 13px;
+  font-weight: bolder;
+  margin-top: -10px;
+}
+
+.card_carrusel_description a {
+  color: white;
+  font-size: 13px;
+  font-weight: bolder;
+  font-family: Colgent;
+  letter-spacing: 1px;
+  position: relative;
+  text-decoration: none; /* Desactiva el subrayado predeterminado */
+}
+
+.card_carrusel_description a::before {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  width: 40%; /* Ancho inicial del subrayado (40% para que comience en la mitad) */
+  height: 2px; /* Grosor del subrayado */
+  background-color: rgb(184, 182, 182);
+  transition: width 0.3s ease, left 0.3s ease; /* Transiciones para width y left */
+  transform: translateX(
+    -50%
+  ); /* Centra el pseudo-elemento en relación al texto */
+}
+
+.card_carrusel_description a:hover::before {
+  background-color: rgb(218, 216, 216);
+  width: 100%; /* Ancho al 100% durante el evento hover (llenando hacia la derecha y la izquierda) */
+}
+
+/*Comienzo Lightbox*/
+
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.925);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+#contenedor-lightbox {
+  width: 100%;
+  padding: 2px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#contenedor-lightbox img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: #f3f3f3;
+}
+
+#btn-cierra,
+#btn-retrocede,
+#btn-adelanta {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.295);
+  color: black;
+  border-radius: 50px;
+  font-size: 1.7rem;
+  top: 50%;
+  right: 10px;
+  z-index: 101;
+}
+
+#btn-cierra {
+  top: 10px;
+  padding-bottom: 5px;
+}
+
+#btn-retrocede {
+  left: 10px;
+}
+
+#lightbox .dots {
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#lightbox .dots li {
+  list-style: none;
+  width: 60px;
+  height: 5px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+#lightbox .dots li.active {
+  width: 60px;
+  background-color: rgb(48, 212, 157);
+  position: relative;
+}
+/*Fin Lightbox*/
+
 /*Producto modo dispositivo*/
 .contenedorproducto {
   position: relative;
@@ -29,7 +360,7 @@ body.noscroll2 {
   height: 100%;
 }
 
-.slider_imagenes_producto{
+.slider_imagenes_producto {
   width: 100%;
   height: 100%;
 }
@@ -49,7 +380,7 @@ body.noscroll2 {
   position: absolute;
 }
 
-.degradado_slider_productos{
+.degradado_slider_productos {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -61,26 +392,29 @@ body.noscroll2 {
   );
 }
 
+/*Texto*/
+
 .textoproducto {
   position: absolute;
   text-align: center;
-  width: 300px;
+  width: 320px;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  padding-left: 25px;
-  padding-right: 25px;
   color: rgb(255, 255, 255);
   z-index: 1;
 }
 
 .textoproducto h2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   font-family: Rached;
-  font-size: 35px;
+  font-size: 33px;
   letter-spacing: 3px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   color: #fff;
-  text-shadow: 5px 5px 5px rgba(23, 27, 31, 0.322);
+  width: 300px;
 }
 
 .textoproducto p {
@@ -91,10 +425,9 @@ body.noscroll2 {
   line-height: 1.4;
   margin-bottom: 11%;
   color: #fff;
-  text-shadow: 5px 5px 5px rgba(23, 27, 31, 0.747);
 }
 
-.textoproducto .botonproducto  {
+.textoproducto .botonproducto {
   font-family: "Roboto", sans-serif;
   color: white;
   font-size: 15px;
@@ -123,10 +456,26 @@ body.noscroll2 {
 }
 
 @media (max-width: 315px) {
+  .card_carrusel {
+    min-width: 220px;
+  }
+
   .contenedorproducto {
     min-width: 250px;
     margin-left: 8px;
     margin-right: 8px;
+  }
+
+  .textoproducto {
+    width: 90%;
+  }
+
+  .textoproducto h2 {
+    width: 100%;
+  }
+
+  .card_carrusel_description {
+    height: 200px;
   }
 }
 
@@ -144,10 +493,97 @@ body.noscroll2 {
   }
 }
 
-/*Productos modo pc*/
+/*Modo pc*/
+
+@media (min-width: 1100px) {
+  /*Comienzo grid scroll fotos 2*/
+
+  .paquetes {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .texto_paquetes {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+  }
+
+  .texto_paquetes h1,
+  .texto_paquetes h2 {
+    font-size: 50px;
+  }
+
+  .texto_paquetes h2{
+    margin-top: -7px;
+  }
+
+  .texto_paquetes_subtitulo{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .button-next1{
+    right: 20px;
+    width: 53px;
+    height: 53px;
+    font-size: 60px;
+  }
+
+  .carrusel_scroll {
+    padding-top: 40px;
+    margin-left: 50px;
+  }
+
+  .card_carrusel {
+    margin-right: 50px;
+    min-width: 450px;
+  }
+
+  .card_carruseltitulo p {
+    font-size: 18px;
+  }
+
+  .card_carrusel_img {
+    height: 90%;
+    max-height: 450px;
+    overflow: hidden;
+    box-shadow: 6px 6px 10px rgba(30, 30, 31, 0.479);
+  }
+
+  .carrusel_img {
+    height: auto;
+  }
+
+  .card_carrusel_description {
+    height: 130px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /*Comienzo Ligthbox*/
+  #btn-cierra:hover,
+  #btn-retrocede:hover,
+  #btn-adelanta:hover {
+    background-color: rgb(206, 206, 206);
+    color: rgb(48, 48, 48);
+  }
+
+  #contenedor-lightbox img {
+    width: auto;
+    height: 90vh;
+    border-radius: 40px;
+  }
+
+  /*Fin Lightbox*/
+  /*Fin grid fotos 2*/
+}
 
 @media (min-width: 1043px) {
- .contenedorproducto {
+  .contenedorproducto {
     position: relative;
     width: 95%;
     height: 90vh;
@@ -169,21 +605,22 @@ body.noscroll2 {
   }
 
   .textoproducto {
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 560px;
+    width: 730px;
   }
 
   .textoproducto h2 {
-    font-size: 55px;
+    font-size: 50px;
     letter-spacing: 5px;
+    width: 100%;
+    max-width: 700px;
   }
 
   .textoproducto p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 22px;
+    max-width: 620px;
   }
 
   .textoproducto .botonproducto {
@@ -192,4 +629,3 @@ body.noscroll2 {
     width: 230px;
   }
 }
-

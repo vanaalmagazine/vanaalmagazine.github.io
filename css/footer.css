@@ -1,208 +1,249 @@
 /*Estilos footer modo dispositivo*/
 footer {
-    font-weight: 600;
-    font-style: normal;
-    background: #1b1b1b;
-    color: #999;
-    position: relative;
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 20px;
+  font-weight: 600;
+  font-style: normal;
+  background: #ffffff;
+  color: #2b2c2c;
+  position: relative;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+footer .contenedorfooter {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+footer .contenedorfooter .redessociales {
+  justify-self: center;
+  width: 100%;
+  border-top: 1px solid rgb(179, 179, 179);
+  border-bottom: 1px solid rgb(179, 179, 179);
+  padding-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+footer .contenedorfooter .redessociales h3 {
+  font-family: Laika;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+}
+
+footer .contenedorfooter .redessociales {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+footer .contenedorfooter .redessociales a {
+  display: flex;
+  color: #2b2c2c;
+  flex-direction: row;
+  align-items: center;
+  font-size: 18px;
+  padding-top: 8px;
+  letter-spacing: 1.5px;
+  padding-bottom: 13px;
+}
+
+footer .contenedorfooter .redessociales p {
+  font-family: ParisLPA;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  text-decoration: none;
+  color: #2b2c2c;
+}
+
+.icon_ion_footer{
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+
+footer .contenedorfooter .feedinstagram {
+  grid-column: 1/3;
+  width: 100%;
+  justify-self: center;
+  padding-left: 20px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+footer .contenedorfooter .feedinstagram img {
+  width: 250px;
+  border-radius: 15px;
+}
+
+footer .contenedorfooter .feedinstagram h2 {
+  font-family: Laika;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: -20px;
+  padding-bottom: 15px;
+}
+
+
+footer .contenedorfooter .logotipofooter {
+  display: flex;
+  flex-direction: column;
+  font-family: Vinete-MT;
+  text-align: left;
+  border-bottom: 1px solid rgb(179, 179, 179);
+  padding-left: 20px;
+  padding-bottom: 50px;
+  margin-top: -30px;
+}
+
+
+footer .contenedorfooter .logotipofooter a {
+  text-decoration: none;
+  font-family: ParisLPA;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #2b2c2c;
+}
+
+footer .contenedorfooter .logotipofooter #logotipofooter_about {
+  padding-bottom: 13px;
+}
+
+footer .contenedorfooter .logotipofooter h2 {
+  font-family: Vinete-MT;
+  font-size: 18px;
+  padding-top: 18px;
+}
+
+footer .contenedorfooter .logotipofooter p {
+  font-family: Vinete-MT;
+  font-size: 15px;
+  text-decoration: overline;
+}
+
+footer .copyright {
+  display: flex;
+}
+
+footer .copyright p {
+  font-family: ParisLPA;
+  font-style: normal;
+  font-weight: normal;
+  margin: auto;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+
+/*Footer modo dispositivo muy pequeño*/
+@media (max-width: 315px) {
+  footer {
+    min-width: 270px;
   }
-  
-  footer .contenedorfooter {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 40% 60%;
-    row-gap: 10px;
-    margin-bottom: 40px;
-  }
-  
-  footer .contenedorfooter .logotipofooter {
-    display: flex;
-    flex-direction: column;
-    font-family: "BodoniMT";
+
+  footer .copyright p {
     text-align: center;
   }
-  
+}
+
+
+
+@media (min-width: 700px) {
+  footer {
+    padding: 60px;
+    padding-bottom: 20px;
+  }
+
+  footer .contenedorfooter {
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    border-top: 1px solid rgb(218, 218, 218);
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  footer .contenedorfooter .redessociales {
+    border-top: none;
+    border-bottom: none;
+    border-right: 1px solid rgb(218, 218, 218);
+    width: 300px;
+  }
+
+  footer .contenedorfooter .redessociales a {
+    font-size: 17px;
+  }
+
+  footer .contenedorfooter .redessociales p {
+    font-size: 13px;
+  }
+
+  footer .contenedorfooter .redessociales h3 {
+    font-size: 16px;
+  }
+
+  .icon_ion_footer{
+    font-size: 19px;
+    margin-right: 8px;
+  }
+
+  footer .contenedorfooter .feedinstagram {
+    padding-left: 15px;
+    padding-right: 20px;
+    border-bottom: none;
+    border-right: 1px solid rgb(218, 218, 218);
+    width: 300px;
+  }
+
+  footer .contenedorfooter .feedinstagram h2 {
+    font-size: 16px;
+    padding-top: 20px;
+    margin-top: 0px;
+  }
+
+
+  footer .contenedorfooter .logotipofooter {
+    border-bottom: none;
+    text-align: left;
+    width: 300px;
+    margin-top: 0px;
+  }
+
+  footer .contenedorfooter .logotipofooter a {
+    font-size: 14px;
+  }
+
   footer .contenedorfooter .logotipofooter h2 {
     font-size: 22px;
   }
-  
+
   footer .contenedorfooter .logotipofooter p {
-    font-size: 14px;
-    text-decoration: overline;
+    padding-left: 10px;
+    font-size: 18px;
   }
-  
-  footer .contenedorfooter .logotipofooter a {
-    text-decoration: none;
-    font-family: BodoniMT;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    margin-top: 10px;
-    color: #999;
-    padding-top: 3px;
+
+
+  footer .contenedorfooter .logotipofooter #logotipofooter_about {
+    padding-top: 20px;
   }
-  
-  footer .contenedorfooter .redessociales {
-    justify-self: center;
-    width: 120px;
-  }
-  
-  footer .contenedorfooter .redessociales h3 {
-    font-family: BodoniMT;
-    text-transform: uppercase;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    letter-spacing: 1px;
-  }
-  
-  footer .contenedorfooter .redessociales {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    gap: 16px;
-  }
-  
-  footer .contenedorfooter .redessociales a {
-    display: flex;
-    flex-direction: row;
-    color: #999;
-    align-items: center;
-  }
-  
-  footer .contenedorfooter .redessociales p{
-    font-family: BodoniMT;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: none;
-    font-size: 14px;
-    letter-spacing: 1.5px;
-  }
-  
-  .icon_ion_footer{
-    font-size: 16px;
-    margin-right: 5px;
-  }
-  
-  footer .contenedorfooter .feedinstagram {
-    grid-column: 1/3;
-    width: 250px;
-    margin-bottom: 25px;
-    justify-self: center;
-    margin-top: 15px;
-  }
-  
-  footer .contenedorfooter .feedinstagram img {
-    width: 250px;
-    border-radius: 15px;
-  }
-  
-  footer .contenedorfooter .feedinstagram h2 {
-    font-family: BodoniMT;
-    text-transform: uppercase;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    letter-spacing: 1px;
-    padding-bottom: 15px;
-  }
-  
+
   footer .copyright {
-    display: flex;
-    margin-bottom: 30px;
+    border-top: 1px solid rgb(218, 218, 218);
+    margin-top: 20px;
   }
-  
-  footer .copyright p {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    margin: auto;
-    font-size: 13px;
-    letter-spacing: 1.5px;
-  }
-  
-  /*Estilos header y footer modo pc*/
-  @media (max-width: 315px) {
-    footer {
-      min-width: 270px;
-    }
-  
-    footer .copyright p {
-      text-align: center;
-    }
-  
-    .logotipo {
-      width: 135px;
-      height: 35px;
-    }
-  }
-  
-  @media (min-width: 1400px) {
-    footer {
-      max-width: 1920px;
-      margin: auto;
-    }
-  }
-  
-  @media (min-width: 700px) {
-    footer {
-      padding: 60px;
-      padding-bottom: 20px;
-    }
-  
-    footer .contenedorfooter {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(1, 1fr);
-      grid-template-columns: 30% 30% 40%;
-    }
-  
-    footer .contenedorfooter .logotipofooter {
-      text-align: left;
-      padding-left: 20%;
-    }
-  
-    footer .contenedorfooter .logotipofooter h2{
-      font-size: 23px;
-    }
-  
-    footer .contenedorfooter .logotipofooter p{
-      font-size: 18px;
-      padding-left: 10px;
-    }
-  
-  
-    footer .contenedorfooter .redessociales {
-      padding-left: 0%;
-      width: 100%;
-    }
-  
-    .icon_ion_footer{
-      font-size: 19px;
-      margin-right: 8px;
-    }
-  
-    footer .contenedorfooter .feedinstagram {
-      grid-column: 3;
-      width: 100%;
-      padding-left: 20%;
-      margin-top: 0;
-    }
-  
-    footer .copyright {
-      margin-top: 20px;
-    }
-  
-    footer .copyright p{
-      font-size: 14px;
-    }
-  }
-  
-  @media screen and (max-width: 310px) {
-    .contenedor {
-      min-width: 310px;
-    }
-  }
-  
+}

@@ -30,6 +30,17 @@
   src: url("../font/Colgent.woff") format("woff");
 }
 
+@font-face {
+  font-family: "ParisLPA";
+  src: url("../font/FeniceStd-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Laika";
+  src: url("../font/DidotRoman.woff") format("woff");
+}
+
+
 
 /*Estilos header modo dispositivo*/
 
