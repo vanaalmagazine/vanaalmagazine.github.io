@@ -61,7 +61,7 @@ body.noscroll2 {
 
 .txtbanner .conttxtbanner,
 .txtbanner2 .conttxtbanner2 {
-  width: 250px;
+  width: 300px;
   text-align: center;
   color: white;
 }
@@ -70,12 +70,13 @@ body.noscroll2 {
 .txtbanner2 .conttxtbanner2 h2,
 .cont_txt_imgfija1 h2,
 .txtwhiteback h2 {
-  font-size: 25px;
+  font-size: 35px;
   font-family: Rached;
   text-shadow: 3px 3px 4px rgba(27, 27, 27, 0.2);
   padding-bottom: 15px;
   letter-spacing: 4px;
 }
+
 
 .txtbanner .conttxtbanner p,
 .txtbanner2 .conttxtbanner2 p,
@@ -83,9 +84,15 @@ body.noscroll2 {
 .txtwhiteback p {
   font-family: Colgent;
   letter-spacing: 1px;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 1.2;
   font-weight: bolder;
+  padding-bottom: 90px;
+}
+
+.cont_txt_imgfija1 p,
+.txtwhiteback p {
+  padding-bottom: 0px;
 }
 
 .txtbanner2 {
@@ -110,6 +117,8 @@ body.noscroll2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .whitebackground .imgwhiteback {
@@ -254,7 +263,7 @@ body.noscroll2 {
   justify-content: center;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 120px;
+  padding-top: 160px;
   padding-bottom: 170px;
 }
 
@@ -277,6 +286,8 @@ body.noscroll2 {
   align-items: center;
   padding-bottom: 10px;
   width: 96, 5vw;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .cont_carrusel_scroll {
@@ -288,13 +299,27 @@ body.noscroll2 {
   margin-left: 15px;
 }
 
+.button-next1 {
+  position: absolute;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  text-align: center;
+  font-family: monospace;
+  padding-top: 0px;
+  z-index: 1;
+}
+
 .cont_carrusel_scroll_1 {
   display: flex;
 }
 
 .cont_carrusel_scroll h2 {
-  color: rgb(199, 199, 199);
-  font-size: 0.9em;
+  font-family: Rached;
+  color: rgb(43, 44, 44);
+  font-size: 22px;
   font-weight: 400;
   letter-spacing: 1px;
   position: absolute;
@@ -433,6 +458,11 @@ button {
 /*Contenedor modo pc*/
 
 @media (max-width: 315px) {
+  .txtbanner .conttxtbanner,
+  .txtbanner2 .conttxtbanner2 {
+    width: 270px;
+  }
+
   .contenedorporfolio {
     min-width: 270px;
   }
@@ -444,7 +474,7 @@ button {
     font-size: 15px;
   }
 
-  .conttxtbanner2{
+  .conttxtbanner2 {
     margin-bottom: 50px;
   }
 }
@@ -674,6 +704,15 @@ button {
     height: 700px;
     padding-bottom: 50px;
     margin-left: 50px;
+    margin-bottom: 0px;
+    margin-top: 80px;
+  }
+
+  .button-next1 {
+    right: 20px;
+    width: 53px;
+    height: 53px;
+    font-size: 60px;
   }
 
   .cont_carrusel_scroll h2 {

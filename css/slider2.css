@@ -50,7 +50,7 @@ img {
   max-width: 100%;
 }
 
-.item-slide img{
+.item-slide img {
   height: 100%;
   object-fit: cover;
 }
@@ -88,7 +88,7 @@ img {
   margin-right: auto;
   margin-bottom: 50px;
   padding-left: 25px;
-  padding-right: 25px
+  padding-right: 25px;
 }
 
 @keyframes autoplay {

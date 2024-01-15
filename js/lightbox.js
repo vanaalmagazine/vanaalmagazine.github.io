@@ -2,7 +2,7 @@
 const btnCierra = document.querySelector('#btn-cierra');
 const btnAdelanta = document.querySelector('#btn-adelanta');
 const btnRetrocede = document.querySelector('#btn-retrocede');
-const imagenes = document.querySelectorAll('.cont_carrusel_scroll img, .cardspresets img, .fotosbackstage img');
+const imagenes = document.querySelectorAll('.cont_carrusel_scroll img');
 const lightbox = document.querySelector('#lightbox');
 const imagenActiva = document.querySelector('#img-activa');
 let dots = document.querySelectorAll('#lightbox .dots li');
@@ -26,7 +26,7 @@ const abreLightbox = (event) => {
   // Encuentra el punto correspondiente y agrega la clase "active"
   dots[indiceImagen].classList.add('active');
 
-  document.querySelectorAll(".cont_carrusel_scroll, .fotosbackstage").forEach(el => {
+  document.querySelectorAll(".cont_carrusel_scroll").forEach(el => {
     el.addEventListener("click", e => {
       const id = e.target.getAttribute("id");
 
