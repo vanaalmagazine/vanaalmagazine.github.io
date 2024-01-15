@@ -172,7 +172,7 @@ header .menu > ul > li .sub-menu > ul > li {
 header .menu > ul > li .sub-menu > ul > li > a {
   display: inline-block;
   padding: 10px 0;
-  font-size: 15px;
+  font-size: 18px;
   color: #555555;
   transition: color 0.3s ease;
   text-decoration: none;
@@ -457,6 +457,8 @@ header .container_header .v-center .item-center .menu{
   header .item-right a {
     height: 30px;
     margin-top: 2px;
+    font-size: 19px;
+    margin-right: 8px;
   }
 
   header .item-right.ocultar a {
@@ -465,6 +467,7 @@ header .container_header .v-center .item-center .menu{
 
   header .item-right a .email {
     margin-right: 5px;
+    font-size: 20px;
   }
 
   /*Botón menú x*/
@@ -798,6 +801,7 @@ header .container_header .v-center .item-center .menu{
     width: 100%;
     z-index: -1;
     margin-top: 0%;
+    margin: 15px;
   }
 
   .contenedor_redes_sociales .redes_sociales {
@@ -822,12 +826,12 @@ header .container_header .v-center .item-center .menu{
     font-family: Gothic;
     letter-spacing: 0.5px;
     margin-left: 12px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .contenedor_redes_sociales .icon_ion_redes {
     color: #3c3d3f;
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
@@ -855,6 +859,15 @@ header .container_header .v-center .item-center .menu{
 
   header .mobile-menu-trigger {
     margin-left: 10px;
+  }
+
+  header .item-right a {
+    margin-right: 0px;
+  }
+
+  header .item-right a .email {
+    margin-right: 0px;
+    font-size: 20px;
   }
 }
 

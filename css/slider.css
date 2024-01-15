@@ -76,7 +76,8 @@
 .txtslider_index {
   position: absolute;
   text-align: center;
-  width: 320px;
+  width: 100%;
+  max-width: 380px;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
@@ -89,11 +90,14 @@
   letter-spacing: 5px;
   color: #fff;
   margin-top: 28%;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .txtslider_index p {
   font-family: Colgent;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 0.7px;
   font-weight: bold;
   margin-bottom: 9%;
@@ -105,7 +109,7 @@
 .txtslider_index a {
   font-family: "Roboto", sans-serif;
   color: white;
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 0.4px;
   font-weight: bold;
   text-align: center;
@@ -282,8 +286,8 @@ section {
     flex-direction: column;
     position: absolute;
     text-align: center;
-    width: 730px;
     height: 200px;
+    max-width: 730px;
   }
 
   .txtslider_index a {
@@ -295,6 +299,7 @@ section {
     font-size: 50px;
     margin-top: 0%;
     margin-bottom: 3%;
+    width: 100%;
   }
 
   .txtslider_index p {

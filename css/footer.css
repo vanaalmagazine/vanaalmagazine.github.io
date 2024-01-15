@@ -31,7 +31,7 @@ footer .contenedorfooter .redessociales h3 {
   text-transform: uppercase;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 1px;
   padding-bottom: 15px;
 }
@@ -50,20 +50,20 @@ footer .contenedorfooter .redessociales a {
   font-size: 18px;
   padding-top: 8px;
   letter-spacing: 1.5px;
-  padding-bottom: 13px;
+  margin-bottom: 18px;
 }
 
 footer .contenedorfooter .redessociales p {
   font-family: ParisLPA;
   font-style: normal;
   font-weight: normal;
-  font-size: 13px;
+  font-size: 18px;
   text-decoration: none;
   color: #2b2c2c;
 }
 
 .icon_ion_footer{
-  font-size: 16px;
+  font-size: 20px;
   margin-right: 5px;
 }
 
@@ -87,7 +87,7 @@ footer .contenedorfooter .feedinstagram h2 {
   text-transform: uppercase;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 1px;
   margin-top: -20px;
   padding-bottom: 15px;
@@ -97,7 +97,7 @@ footer .contenedorfooter .feedinstagram h2 {
 footer .contenedorfooter .logotipofooter {
   display: flex;
   flex-direction: column;
-  font-family: Vinete-MT;
+  font-family: BodoniMT;
   text-align: left;
   border-bottom: 1px solid rgb(179, 179, 179);
   padding-left: 20px;
@@ -111,24 +111,25 @@ footer .contenedorfooter .logotipofooter a {
   font-family: ParisLPA;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 18px;
   color: #2b2c2c;
 }
 
 footer .contenedorfooter .logotipofooter #logotipofooter_about {
-  padding-bottom: 13px;
+  padding-bottom: 18px;
 }
 
 footer .contenedorfooter .logotipofooter h2 {
-  font-family: Vinete-MT;
-  font-size: 18px;
+  font-family: BodoniMT;
+  font-size: 20px;
   padding-top: 18px;
 }
 
 footer .contenedorfooter .logotipofooter p {
-  font-family: Vinete-MT;
-  font-size: 15px;
+  font-family: BodoniMT;
+  font-size: 18px;
   text-decoration: overline;
+  margin-bottom: 15px;
 }
 
 footer .copyright {
@@ -138,7 +139,7 @@ footer .copyright {
 footer .copyright p {
   font-family: ParisLPA;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   margin: auto;
   font-size: 13px;
   letter-spacing: 1.5px;
