@@ -181,9 +181,7 @@ body.noscroll2 {
   max-height: 350px;
   overflow: hidden;
   box-shadow: 6px 6px 10px rgba(30, 30, 31, 0.479);
-  border-radius: 10px;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
+  border-radius: 40px;
 }
 
 .carrusel_img {
@@ -226,7 +224,7 @@ body.noscroll2 {
 }
 
 .card_carrusel_description .rebaja{
-  color: rgb(255, 0, 0);
+  color: rgb(21, 209, 115);
   font-size: 15px;
   font-weight: bolder;
   margin-top: -10px;

@@ -57,13 +57,13 @@ footer .contenedorfooter .redessociales p {
   font-family: ParisLPA;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 17px;
   text-decoration: none;
   color: #2b2c2c;
 }
 
 .icon_ion_footer{
-  font-size: 20px;
+  font-size: 23px;
   margin-right: 5px;
 }
 
@@ -111,7 +111,7 @@ footer .contenedorfooter .logotipofooter a {
   font-family: ParisLPA;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 19px;
   color: #2b2c2c;
 }
 
@@ -121,7 +121,7 @@ footer .contenedorfooter .logotipofooter #logotipofooter_about {
 
 footer .contenedorfooter .logotipofooter h2 {
   font-family: BodoniMT;
-  font-size: 20px;
+  font-size: 23px;
   padding-top: 18px;
 }
 
