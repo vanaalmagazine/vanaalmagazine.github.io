@@ -138,8 +138,8 @@ body.noscroll2 {
 .whitebackground .txtwhiteback {
   width: 90%;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 40px;
   padding-bottom: 30px;
 }
 
@@ -543,8 +543,8 @@ button {
 
   /*Comienzo white background*/
   .whitebackground .txtwhiteback {
-    margin-bottom: -30px;
     width: 560px;
+    margin-top: 70px;
   }
 
   .txtwhiteback h2 {
