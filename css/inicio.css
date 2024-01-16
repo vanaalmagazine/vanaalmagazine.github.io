@@ -137,6 +137,7 @@ body.noscroll2 {
 .cont_carrusel_scroll_1 {
   display: flex;
   height: 100%;
+  padding-bottom: 15px;
 }
 
 .cont_carrusel_scroll::-webkit-scrollbar {
@@ -146,7 +147,7 @@ body.noscroll2 {
 }
 
 .cont_carrusel_scroll::-webkit-scrollbar-thumb {
-  background-color: rgb(6, 160, 96);
+  background-color: rgb(6, 143, 86);
   border-radius: 15px;
 }
 
@@ -162,6 +163,7 @@ body.noscroll2 {
 }
 
 .card_carruseltitulo {
+  text-align: center;
   height: 30px;
   padding-left: 10px;
   margin-bottom: 10px;
@@ -171,7 +173,7 @@ body.noscroll2 {
   font-family: Colgent;
   letter-spacing: 0.1em;
   color: #fff;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: bold;
 }
 
@@ -193,7 +195,7 @@ body.noscroll2 {
 }
 
 .carrusel_img:hover {
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 .card_carrusel_description {
@@ -224,40 +226,35 @@ body.noscroll2 {
 }
 
 .card_carrusel_description .rebaja{
-  color: rgb(21, 209, 115);
+  color: rgb(0, 238, 255);
   font-size: 15px;
   font-weight: bolder;
   margin-top: -10px;
 }
 
 .card_carrusel_description a {
-  color: white;
-  font-size: 18px;
-  font-weight: bolder;
   font-family: Colgent;
-  letter-spacing: 1px;
   position: relative;
-  text-decoration: none; /* Desactiva el subrayado predeterminado */
-
+  color: white;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+  left: 1%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 210px;
+  background: linear-gradient(to right, rgb(0, 124, 66), rgb(1, 168, 90));
+  text-decoration: none;
+  border-radius: 8mm;
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-.card_carrusel_description a::before {
-  content: "";
-  position: absolute;
-  bottom: -7px;
-  left: 50%;
-  width: 40%; /* Ancho inicial del subrayado (40% para que comience en la mitad) */
-  height: 2px; /* Grosor del subrayado */
-  background-color: rgb(184, 182, 182);
-  transition: width 0.3s ease, left 0.3s ease; /* Transiciones para width y left */
-  transform: translateX(
-    -50%
-  ); /* Centra el pseudo-elemento en relación al texto */
-}
-
-.card_carrusel_description a:hover::before {
-  background-color: rgb(218, 216, 216);
-  width: 100%; /* Ancho al 100% durante el evento hover (llenando hacia la derecha y la izquierda) */
+.card_carrusel_description a:hover {
+  background: linear-gradient(to right, rgb(0, 95, 51), rgb(1, 131, 70));
 }
 
 /*Comienzo Lightbox*/
@@ -534,13 +531,9 @@ button {
   .card_carrusel {
     margin-right: 50px;
     min-width: 450px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
-
-  .card_carruseltitulo p {
-    font-size: 18px;
-  }
-
+  
   .card_carrusel_img {
     height: 90%;
     max-height: 450px;
