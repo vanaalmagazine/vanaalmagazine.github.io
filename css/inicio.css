@@ -137,7 +137,6 @@ body.noscroll2 {
 .cont_carrusel_scroll_1 {
   display: flex;
   height: 100%;
-  padding-bottom: 40px;
 }
 
 .cont_carrusel_scroll::-webkit-scrollbar {
@@ -182,6 +181,7 @@ body.noscroll2 {
   overflow: hidden;
   box-shadow: 6px 6px 10px rgba(30, 30, 31, 0.479);
   border-radius: 40px;
+  margin-bottom: 15px;
 }
 
 .carrusel_img {
@@ -200,7 +200,7 @@ body.noscroll2 {
   height: 150px;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 
 .card_carrusel_description p {
@@ -533,6 +533,7 @@ button {
   .card_carrusel {
     margin-right: 50px;
     min-width: 450px;
+    margin-bottom: 15px;
   }
 
   .card_carruseltitulo p {
