@@ -126,7 +126,7 @@ body.noscroll2 {
   right: 15px;
   width: 40px;
   height: 40px;
-  color: rgb(255, 255, 255);
+  color: rgb(42, 42, 43);
   font-size: 50px;
   text-align: center;
   font-family: monospace;
@@ -286,6 +286,7 @@ body.noscroll2 {
 #contenedor-lightbox img {
   width: 100%;
   height: auto;
+  border-radius: 40px;
 }
 
 button {
@@ -568,7 +569,6 @@ button {
   #contenedor-lightbox img {
     width: auto;
     height: 90vh;
-    border-radius: 40px;
   }
 
   /*Fin Lightbox*/
