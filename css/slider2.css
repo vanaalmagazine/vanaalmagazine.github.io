@@ -68,10 +68,11 @@ img {
   font-family: Rached;
   letter-spacing: 5px;
   font-size: 25px;
-  margin-bottom: 15px;
   width: 250px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
   margin-top: 30px;
 }
 
@@ -86,9 +87,31 @@ img {
   max-width: 420px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.chequear_porfolio {
+  color: rgb(45, 46, 46);;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  letter-spacing: 0.8px;
+}
+
+.chequear_porfolio p {
+  font-family: Colgent;
+  letter-spacing: 1.2px;
+  font-size: 18px;
+  font-weight: bold;
+  border-width: 0 0 1px;
+}
+
+.chequear_porfolio p a {
+  color: rgb(5, 153, 190);
+}
+
+.chequear_porfolio p a:hover {
+  color: rgb(32, 191, 231);
 }
 
 @keyframes autoplay {
@@ -192,4 +215,21 @@ img {
     padding-left: 0px;
     padding-right: 0px;
   }
+
+  .chequear_porfolio {
+    margin-top: 16px;
+    margin-left: 10px;
+  }
+  
+  .chequear_porfolio p {
+    border-style: solid;
+    padding-bottom: 8px;
+    width: 300px;
+    font-size: 16px;
+  }
+
+  .chequear_porfolio p a{
+    font-size: 16px;
+  }
+  
 }
