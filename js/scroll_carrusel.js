@@ -1,6 +1,6 @@
-/*Abrir ver más**/
-function toggleLista() {
-    var listaPaquetes = document.getElementById('lista-paquetes');
+/*Abrir ver más lista paquetes**/
+function toggleBeneficios() {
+    var listaPaquetes = document.getElementById('lista-beneficios');
     var alturaActual = listaPaquetes.offsetHeight; // Altura actual, incluyendo la transición
 
     // Establecer temporalmente la altura a 'auto' para obtener la altura completa
@@ -14,6 +14,21 @@ function toggleLista() {
     setTimeout(function () {
         listaPaquetes.style.maxHeight = alturaActual === 0 ? alturaCompleta + 'px' : '0';
     }, 10);
+}
+
+/*Ver más cards*/
+function toggleLista(verMas) {
+  var tarjeta = verMas.closest('.caracteristicas');
+  var listaPaquetes = tarjeta.querySelector('.lista_caract');
+  var verMasTexto = tarjeta.querySelector('.ver-mas');
+
+  if (listaPaquetes.style.maxHeight) {
+    listaPaquetes.style.maxHeight = null;
+    verMasTexto.innerHTML = 'Ver más';
+  } else {
+    listaPaquetes.style.maxHeight = listaPaquetes.scrollHeight + 'px';
+    verMasTexto.innerHTML = 'Ver menos';
+  }
 }
 
 /*Scroll en el carrusel */

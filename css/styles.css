@@ -30,16 +30,24 @@
 }
 
 @font-face {
+  font-family: "Laika";
+  src: url("../font/DidotRoman.woff") format("woff");
+}
+
+@font-face {
   font-family: "ParisLPA";
   src: url("../font/FeniceStd-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Laika";
-  src: url("../font/DidotRoman.woff") format("woff");
+  font-family: "JimmyBold";
+  src: url("../font/BRHendrix-SemiBold.woff") format("woff");
 }
 
-
+@font-face {
+  font-family: "Jimmylight";
+  src: url("../font/BRHendrix-Regular.woff") format("woff");
+}
 
 /*Estilos header modo dispositivo*/
 
