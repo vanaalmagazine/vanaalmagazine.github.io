@@ -124,9 +124,9 @@
   letter-spacing: 0.4px;
   font-weight: bold;
   text-align: center;
-  background: linear-gradient(to right, rgb(0, 124, 66), rgb(1, 168, 90));
- /* background: rgba(112, 112, 112, 0.445);
-  backdrop-filter: blur(5px);*/
+/*  background: linear-gradient(to right, rgb(0, 124, 66), rgb(1, 168, 90));
+  background: rgba(112, 112, 112, 0.445);*/
+  backdrop-filter: blur(5px);
   text-decoration: none;
   margin-top: 40px;
   border-radius: 8mm;
