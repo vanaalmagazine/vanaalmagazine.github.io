@@ -31,7 +31,7 @@ body.noscroll2 {
   background-attachment: fixed;
   background-size: cover;
   filter: brightness(0.9);
-  z-index: -1; 
+  z-index: -1;
 }
 
 .texto_paquetes {
@@ -57,7 +57,7 @@ body.noscroll2 {
   text-decoration: underline;
 }
 
-.texto_paquetes_subtitulo{
+.texto_paquetes_subtitulo {
   margin-top: 40px;
   margin-bottom: 30px;
 }
@@ -66,10 +66,9 @@ body.noscroll2 {
 .texto_paquetes ol,
 .ver-mas {
   font-family: Colgent;
-  font-size: 20px;
+  font-size: 21px;
   letter-spacing: 1px;
   line-height: 1.4;
-  font-weight: bold;
 }
 
 .texto_paquetes ol {
@@ -83,12 +82,12 @@ body.noscroll2 {
 
 .ver-mas {
   cursor: pointer;
-  color: rgb(255, 255, 255); 
+  color: rgb(255, 255, 255);
   text-decoration: underline;
   text-underline-offset: 0.2em;
 }
 
-.ver-mas:hover{
+.ver-mas:hover {
   color: #d2d6d4;
 }
 
@@ -118,10 +117,10 @@ body.noscroll2 {
   overflow-y: hidden;
   list-style: none;
   margin-left: 10px;
-  padding-left: 10px; 
+  padding-left: 10px;
 }
 
-.button-next1{
+.button-next1 {
   position: absolute;
   right: 15px;
   width: 40px;
@@ -175,7 +174,7 @@ body.noscroll2 {
 }
 
 .card_carruseltitulo p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 1.2px;
   color: #3c3c3f;
   font-size: 20px;
@@ -186,7 +185,7 @@ body.noscroll2 {
 
 /*Texto qué trae*/
 .quetraetexto {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 17px;
   font-weight: bold;
   color: hsl(180, 1%, 31%);
@@ -194,9 +193,9 @@ body.noscroll2 {
 }
 
 .card_carrusel_description li.quetraetexto::before {
-  content: '✔'; 
-  color: hsl(167, 56%, 56%); 
-  font-size: 15px; 
+  content: "✔";
+  color: hsl(167, 56%, 56%);
+  font-size: 15px;
   position: relative;
   margin-right: 7px;
 }
@@ -226,8 +225,8 @@ body.noscroll2 {
 }
 
 /*Texto rebaja*/
-.card_carrusel_description .rebaja{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.card_carrusel_description .rebaja {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(241, 77, 127);
   font-size: 15px;
   font-weight: bolder;
@@ -259,11 +258,11 @@ body.noscroll2 {
 }
 
 .card_carrusel_description a:hover {
-  background: rgb(209, 62, 111)
+  background: rgb(209, 62, 111);
 }
 
 /*Texto pagas al recibir*/
-.pagasalrecibir{
+.pagasalrecibir {
   width: 100%;
   height: 50px;
   margin-top: 20px;
@@ -290,7 +289,7 @@ body.noscroll2 {
   text-align: center; /* Centra el texto en el contenedor */
   cursor: pointer;
   color: rgb(71, 72, 73);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 16px;
   margin-top: 5px;
   margin-bottom: 15px;
@@ -303,18 +302,18 @@ body.noscroll2 {
 .caracteristicas .ver-mas:before {
   content: "";
   position: absolute;
-  width: 15%; 
-  height: 1px; 
+  width: 15%;
+  height: 1px;
   background-color: rgb(71, 72, 73);
-  bottom: -3px; 
-  left: 43%; 
-  transition: width 0.3s, left 0.3s; 
-  transform-origin: center; 
+  bottom: -3px;
+  left: 43%;
+  transition: width 0.3s, left 0.3s;
+  transform-origin: center;
 }
 
 .caracteristicas .ver-mas:hover:before {
-  width: 30%; 
-  left: 35%; 
+  width: 30%;
+  left: 35%;
 }
 
 .lista_caract {
@@ -327,23 +326,36 @@ body.noscroll2 {
 }
 
 .lista_caract li {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   position: relative;
-  padding-left: 17px; 
+  padding-left: 17px;
   font-weight: normal;
 }
 
-.lista_caract li .negrita{
+.lista_caract li .negrita {
   font-weight: bold;
 }
 
 .lista_caract li::before {
-  content: '●'; 
-  color: rgb(31, 182, 149); 
+  content: "●";
+  color: rgb(31, 182, 149);
   font-size: 10px;
-  padding-top: 3px; 
+  padding-top: 3px;
   position: absolute;
   left: 0;
+}
+
+.lista_caract li.cambiodecolor::before {
+  color: rgb(226, 158, 57); /* Color del ● */
+}
+
+.lista_caract li.cambiodecolor2::before {
+  color: rgb(243, 78, 128); /* Color del ● */
+}
+
+.lista_caract li.cambiodecolor,
+.lista_caract li.cambiodecolor1 {
+  font-size: 15px; /* Tamaño de fuente más pequeño */
 }
 
 .txt_caract {
@@ -366,7 +378,7 @@ body.noscroll2 {
 
 .productoslider {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -407,46 +419,52 @@ body.noscroll2 {
 
 .textoproducto {
   position: absolute;
-  text-align: center;
+  text-align: left;
   width: 100%;
-  left: 50%;
-  top: 75%;
-  transform: translateX(-50%) translateY(-50%);
-  color: rgb(189, 26, 26);
+  bottom: 10%;
   z-index: 1;
+  max-width: 690px;
+  color: white;
 }
 
-.textoproducto h2 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: Rached;
-  font-size: 34px;
-  letter-spacing: 1px;
-  margin-bottom: 30px;
-  color: #ffffff;
-  width: 300px;
-  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.116);
+.textoproducto h1 {
+  font-family: TestRegular;
+  font-size: 35px;
+  width: 100%;
+  padding-left: 30px;
+  line-height: 0.9;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.308);
+}
+
+.txtproducto_1 {
+  font-family: ExpoRegular;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+  padding: 0;
+  width: 88%;
+  margin-top: 30px;
+  padding-left: 30px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.308);
 }
 
 .textoproducto .botonproducto {
   font-family: "Roboto", sans-serif;
   color: white;
+  width: 170px;
   font-size: 15px;
   letter-spacing: 0.4px;
   font-weight: bold;
   text-align: center;
-  left: 1%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 190px;
   background: linear-gradient(to right, rgb(0, 124, 66), rgb(1, 168, 90));
   text-decoration: none;
+  margin-top: 40px;
   border-radius: 8mm;
   padding: 15px;
   padding-left: 20px;
   padding-right: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .textoproducto .botonproducto:hover {
@@ -464,18 +482,20 @@ body.noscroll2 {
     margin-right: 8px;
   }
 
-  .textoproducto {
-    width: 90%;
-  }
-
-  .textoproducto h2 {
+  .textoproducto h1 {
+    font-size: 25px;
     width: 100%;
   }
 
   .cont_carrusel_scroll {
-    margin-left: 0px; 
+    margin-left: 0px;
   }
 
+  .txtproducto_1 {
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -516,11 +536,11 @@ body.noscroll2 {
     font-size: 50px;
   }
 
-  .texto_paquetes h2{
+  .texto_paquetes h2 {
     margin-top: -7px;
   }
 
-  .button-next1{
+  .button-next1 {
     right: 20px;
     width: 53px;
     height: 53px;
@@ -538,7 +558,7 @@ body.noscroll2 {
     margin-top: 5px;
   }
 
-  .card_carrusel:hover{
+  .card_carrusel:hover {
     box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.308);
     transform: scale(1.01);
   }
@@ -547,20 +567,20 @@ body.noscroll2 {
     font-size: 16px;
   }
 
-  .pagasalrecibir{
+  .pagasalrecibir {
     font-size: 15px;
   }
 
-  .txt_caract{
+  .txt_caract {
     font-size: 17px;
   }
 
-  .lista_caract{
+  .lista_caract {
     font-size: 15px;
   }
 }
 
-@media (min-width: 1043px) {
+@media (min-width: 700px) {
   .contenedorproducto {
     width: 100%;
     margin-left: auto;
@@ -570,20 +590,27 @@ body.noscroll2 {
   }
 
   .textoproducto {
-    width: 750px;
+    bottom: 18%;
+    margin-left: 70px;
   }
 
-  .textoproducto h2 {
-    font-size: 50px;
-    letter-spacing: 5px;
-    width: 100%;
-    max-width: 750px;
-    margin-bottom: 40px;
+  .textoproducto h1 {
+    font-size: 45px;
+    width: 80%;
+    line-height: 0.6;
+    padding-left: 50px;
+  }
 
+  .txtproducto_1 {
+    margin-top: 50px;
+    font-size: 17px;
+    max-width: 600px;
+    letter-spacing: 0.7px;
+    padding-left: 50px;
   }
 
   .textoproducto .botonproducto {
     font-size: 16px;
-    width: 230px;
+    margin-left: 50px;
   }
 }

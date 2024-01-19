@@ -47,9 +47,8 @@ footer .contenedorfooter .redessociales a {
   color: #2b2c2c;
   flex-direction: row;
   align-items: center;
-  font-size: 18px;
   padding-top: 8px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   margin-bottom: 18px;
 }
 
@@ -57,13 +56,13 @@ footer .contenedorfooter .redessociales p {
   font-family: ParisLPA;
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 16px;
   text-decoration: none;
   color: #2b2c2c;
 }
 
 .icon_ion_footer{
-  font-size: 23px;
+  font-size: 22px;
   margin-right: 5px;
 }
 

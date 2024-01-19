@@ -15,7 +15,7 @@
   margin-left: -100%;
 }
 
-.degradado_slider{
+.degradado_slider {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -77,57 +77,65 @@
   position: absolute;
   text-align: center;
   width: 100%;
-  max-width: 380px;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
   z-index: 1;
+  color: white;
+  text-align: left;
+  bottom: 15%;
 }
 
 .txtslider_index h2 {
-  font-family: Rached;
-  font-size: 33px;
-  letter-spacing: 4px;
-  color: #fff;
-  margin-top: 28%;
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
+  font-family: TestRegular;
+  font-size: 30px;
+  width: 270px;
+  margin-left: 6%;
+  line-height: 0.9;
+}
+
+.txtslider_index .titulo_2 {
+  font-family: TestBold;
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+.txtslider_index .titulo_3 {
+  font-family: TestRegular;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  margin-left: 6%;
 }
 
 .txtslider_index p {
-  font-family: Colgent;
-  font-size: 20px;
-  letter-spacing: 0.7px;
-  font-weight: bold;
-  margin-bottom: 9%;
+  font-family: ExpoRegular;
+  font-size: 15px;
+  letter-spacing: 0.1px;
   padding: 0;
   color: white;
-  margin-top: 40px;
+  margin-top: 30px;
+  width: 90%;
+  margin-left: 6%;
 }
 
 .txtslider_index a {
   font-family: "Roboto", sans-serif;
   color: white;
-  font-size: 16px;
+  width: 210px;
+  font-size: 15px;
   letter-spacing: 0.4px;
   font-weight: bold;
   text-align: center;
-  left: 1%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 210px;
-  background: linear-gradient(to right, rgb(0, 124, 66), rgb(1, 168, 90));
-  /*
-   background: rgba(112, 112, 112, 0.445);
-  backdrop-filter: blur(4px);*/
+  /*background: linear-gradient(to right, rgb(0, 124, 66), rgb(1, 168, 90));*/
+  background: rgba(112, 112, 112, 0.445);
+  backdrop-filter: blur(5px);
   text-decoration: none;
   margin-top: 40px;
   border-radius: 8mm;
   padding: 15px;
   padding-left: 20px;
   padding-right: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .txtslider_index a:hover {
@@ -182,7 +190,7 @@ section {
 /*Dots*/
 .contenedor_slider_index .dots {
   position: absolute;
-  bottom: 60px;
+  bottom: 30px;
   color: #fff;
   left: 0;
   width: 100%;
@@ -240,12 +248,40 @@ section {
   }
 
   .txtslider_index {
-    width: 250px;
-
+    width: 270px;
+    top: 50%;
   }
 
   .contenedor_slider_index .dots {
     bottom: 20px;
+  }
+
+  .txtslider_index h2 {
+    font-size: 25px;
+    width: 100%;
+  }
+  
+  .txtslider_index .titulo_2 {
+    font-size: 25px;
+  }
+  
+  .txtslider_index .titulo_3 {
+    font-size: 12px;
+  }
+  
+  .txtslider_index p {
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    width: 90%;
+  }
+
+  .txtslider_index a {
+    font-size: 14px;
+    width: 180px;
+    margin-top: 30px;
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 
@@ -259,18 +295,13 @@ section {
 }
 
 @media (min-width: 760px) {
-
   .contenedor_slider_index {
     max-height: 100vh;
   }
-  
-  .slider_index, .slider_index img {
-    height: 100vh;
-  }
 
-  .slider_btn_prev_index,
-  .slider_btn_next_index {
-    display: block;
+  .slider_index,
+  .slider_index img {
+    height: 100vh;
   }
 
   .slider_btn_prev_index {
@@ -284,39 +315,45 @@ section {
   .txtslider_index {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    text-align: center;
-    height: 200px;
-    max-width: 730px;
-  }
-
-  .txtslider_index a {
-    font-size: 16px;
-    width: 230px;
+    max-width: 690px;
+    left: 4%;
+    bottom: 20%;
   }
 
   .txtslider_index h2 {
-    font-size: 50px;
-    margin-top: 0%;
-    margin-bottom: 3%;
+    font-size: 60px;
+    width: 80%;
+    line-height: 0.6;
+  }
+  
+  .txtslider_index .titulo_2 {
+    font-size: 60px;
+    letter-spacing: 4px;
+  }
+  
+  .txtslider_index .titulo_3 {
+    font-size: 22px;
+    letter-spacing: 1.2px;
     width: 100%;
   }
 
   .txtslider_index p {
-    font-size: 25px;
-    margin-top: 0%;
-    margin-bottom: 3%;
-    max-width: 590px;
-    margin-left: auto;
-    margin-right: auto;
-    letter-spacing: 1px;
+    margin-top: 50px;
+    font-size: 17px;
+    max-width: 620px;
+    letter-spacing: 0.7px;
+  }
+
+  .txtslider_index a {
+    background: linear-gradient(to right, rgb(0, 124, 66), rgb(1, 168, 90));
+    margin-left: 50px;
   }
 
   /*Dots*/
   /*Dots*/
 
-  .contenedor_slider_index .dots{
-      bottom: 30px;
+  .contenedor_slider_index .dots {
+    bottom: 30px;
   }
 
   .contenedor_slider_index .dots li {
