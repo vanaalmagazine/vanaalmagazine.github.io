@@ -18,7 +18,7 @@
   background: linear-gradient(
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 0.185),
-    rgba(0, 0, 0, 0.329),
+    rgba(0, 0, 0, 0.521),
     rgba(0, 0, 0, 0.658)
   );
   z-index: 1;
@@ -56,30 +56,30 @@
 
 .txtslider_index h2 {
   font-family: TestRegular;
-  font-size: 30px;
-  width: 270px;
+  font-size: 35px;
+  width: 290px;
   margin-left: 6%;
   line-height: 0.9;
 }
 
 .txtslider_index .titulo_2 {
   font-family: TestBold;
-  font-size: 30px;
+  font-size: 35px;
   letter-spacing: 2px;
   line-height: 1.4;
 }
 
 .txtslider_index .titulo_3 {
   font-family: TestRegular;
-  font-size: 14px;
-  letter-spacing: 0.2px;
+  font-size: 15px;
+  letter-spacing: 1px;
   margin-left: 6%;
 }
 
 .txtslider_index p {
   font-family: ExpoRegular;
-  font-size: 15px;
-  letter-spacing: 0.1px;
+  font-size: 16px;
+  letter-spacing: 0.8px;
   padding: 0;
   color: white;
   margin-top: 30px;
@@ -95,9 +95,9 @@
   letter-spacing: 0.4px;
   font-weight: bold;
   text-align: center;
-  /*background: linear-gradient(to right, rgb(0, 124, 66), rgb(1, 168, 90));*/
-  background: rgba(112, 112, 112, 0.445);
-  backdrop-filter: blur(5px);
+  background: linear-gradient(to right, rgb(0, 124, 66), rgb(1, 168, 90));
+ /* background: rgba(112, 112, 112, 0.445);
+  backdrop-filter: blur(5px);*/
   text-decoration: none;
   margin-top: 40px;
   border-radius: 8mm;
@@ -116,20 +116,20 @@
 /*Dots*/
 .dots_slider {
   position: absolute;
-  right: 10px;
+  right: 15px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
 }
 
 .dots_slider .dot {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   margin: 0px 2px;
   border: 1px solid #a5a5a5e8;
   background: rgba(240, 248, 255, 0.384);
   border-radius: 50%;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   transition: 0.6s ease;
   cursor: pointer;
 }
@@ -276,7 +276,8 @@ span.prev:hover {
   }
 
   .txtslider_index .titulo_3 {
-    font-size: 12px;
+    font-size: 12px; 
+    letter-spacing: 0.2px;
   }
 
   .txtslider_index p {
@@ -307,6 +308,11 @@ span.prev:hover {
   }
 
   /*Dots*/
+
+  .dots_slider {
+    right: 10px;
+  }
+
   .dots_slider .dot {
     width: 8px;
     height: 8px;
@@ -360,9 +366,9 @@ span.prev:hover {
 
   .txtslider_index p {
     margin-top: 50px;
-    font-size: 17px;
+    font-size: 18px;
     max-width: 620px;
-    letter-spacing: 0.7px;
+    letter-spacing: 1px;
   }
 
   .txtslider_index a {
@@ -372,7 +378,7 @@ span.prev:hover {
 
   /*Dots*/
   .dots_slider{
-    right: 25px;
+    right: 40px;
   }
 
   .dots_slider .dot {
