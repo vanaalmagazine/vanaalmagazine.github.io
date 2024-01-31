@@ -320,6 +320,7 @@ header
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+  height: 100%;
 }
 
 header .menu ul li .sub-menu.mega-menu-column-4 .list-item_img img,
