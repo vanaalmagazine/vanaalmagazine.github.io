@@ -48,7 +48,7 @@ window.addEventListener("scroll", function () {
   
   /*Auto Slideing*/
   function autoSliding(){
-    deletInterval = setInterval(timer, 7000);
+    deletInterval = setInterval(timer, 6000);
     function timer(){
       slideNext();
       indicators();
