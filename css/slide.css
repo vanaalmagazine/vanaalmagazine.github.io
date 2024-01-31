@@ -1,18 +1,14 @@
-/*slider modo dispositivo*/
-.contenedor_slider_index {
+.slider-container {
   margin: auto;
+  position: relative;
   width: 100%;
   max-width: 1920px;
-  max-height: 93.5vh;
-  position: relative;
-  overflow: hidden;
-}
-
-.slider_index {
-  display: flex;
-  width: 400%;
   height: 93.5vh;
-  margin-left: -100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  background: linear-gradient(to bottom, #253c3f, #01171d);
 }
 
 .degradado_slider {
@@ -25,51 +21,26 @@
     rgba(0, 0, 0, 0.329),
     rgba(0, 0, 0, 0.658)
   );
-  z-index: 0;
-}
-
-.slider_section_index {
-  width: 100%;
-}
-
-.slider_index img {
-  display: block;
-  width: 100%;
-  height: 93.5vh;
-  object-fit: cover;
-}
-
-.slider_btn_prev_index,
-.slider_btn_next_index {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.651);
-  color: rgba(18, 18, 19, 0.616);
-  top: 53%;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  font-size: 25px;
-  text-align: center;
-  font-family: monospace;
-  cursor: pointer;
-  padding-top: 4px;
   z-index: 1;
-  display: none;
 }
 
-.slider_btn_prev_index {
-  left: 15px;
+.slider-container .slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
-.slider_btn_next_index {
-  right: 15px;
+.slider-container .slider img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
 }
 
-.slider_btn_prev_index:hover,
-.slider_btn_next_index:hover {
-  background-color: rgb(1, 168, 90);
-  color: rgb(255, 255, 255);
+.slider-container .slider img:not(.active) {
+  top: 0;
+  left: -100%;
 }
 
 /*Texto*/
@@ -77,7 +48,7 @@
   position: absolute;
   text-align: center;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   color: white;
   text-align: left;
   bottom: 15%;
@@ -142,13 +113,69 @@
   background: linear-gradient(to right, rgb(0, 95, 51), rgb(1, 131, 70));
 }
 
-section {
-  width: 100%;
-  margin-bottom: 25px;
+/*Dots*/
+.dots_slider {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.dots_slider .dot {
+  width: 10px;
+  height: 10px;
+  margin: 0px 2px;
+  border: 1px solid #a5a5a5e8;
+  background: rgba(240, 248, 255, 0.384);
+  border-radius: 50%;
+  margin-bottom: 15px;
+  transition: 0.6s ease;
+}
+
+.dots_slider .active {
+  background-color: #f3f3f3;
+}
+
+/*Hace avanzar las imagenes*/
+@keyframes next1 {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes next2 {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+/*Hace Retroceder las imagenes*/
+@keyframes prev1 {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes prev2 {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
 }
 
 /*Flecha*/
-
 .indicador_bottom_arrow {
   width: 50px;
   height: 50px;
@@ -158,7 +185,7 @@ section {
   bottom: 5px;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  z-index: 1;
+  z-index: 2;
 }
 
 .arrow {
@@ -184,43 +211,51 @@ section {
   }
 }
 
-/*Dots*/
-.contenedor_slider_index .dots {
+/*Botones next y prev*/
+span.next,
+span.prev {
   position: absolute;
-  bottom: 45%;
-  right: 5px;
-  color: #fff;
-  padding: 0;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(5px);
+  font-size: 22px;
+  transition: 0.5s;
+  border-radius: 50px;
+  user-select: none;
+  cursor: pointer;
   z-index: 1;
+  padding-bottom: 2px;
+  display: none;
 }
 
-.contenedor_slider_index .dots li {
-  list-style: none;
-  width: 8px;
-  height: 8px;
-  background-color: #ffffff52;
-  margin: 5px;
-  border-radius: 10px;
-  transition: 1s;
+span.prev {
+  left: 30px;
+  padding-right: 2px;
 }
 
-.contenedor_slider_index .dots li.active {
-  width: 8px;
-  background-color: #c7c5c5;
-  position: relative;
+span.next {
+  right: 30px;
 }
 
-/*slider modo pc*/
+span.next:hover,
+span.prev:hover {
+  background-color: rgb(3, 134, 90);
+}
 
-/*Estilos modo pc*/
+/*Dispositivos pequeños*/
 @media (max-width: 312px) {
-  .contenedor_slider,
-  main .contenedor_slider_index {
+  .slider-container {
     min-width: 270px;
   }
 
+  /*Texto*/
   .txtslider_index {
     width: 270px;
     top: 50%;
@@ -229,6 +264,10 @@ section {
   .txtslider_index h2 {
     font-size: 25px;
     width: 100%;
+  }
+
+  .txtslider_index .titulo_1 {
+    width: 240px;
   }
 
   .txtslider_index .titulo_2 {
@@ -254,6 +293,7 @@ section {
     padding-right: 5px;
   }
 
+  /*Flecha*/
   .indicador_bottom_arrow {
     width: 50px;
     height: 50px;
@@ -265,18 +305,20 @@ section {
     font-size: 30px;
   }
 
-  .contenedor_slider_index .dots li {
-    width: 5px;
-    height: 5px;
+  /*Dots*/
+  .dots_slider .dot {
+    width: 8px;
+    height: 8px;
   }
 
-  .contenedor_slider_index .dots li.active {
-    width: 5px;
+  .dots_slider .active {
+    width: 8px;
   }
 }
 
+/*Modo Pc*/
 @media (min-width: 1400px) {
-  main .contenedor_slider_index {
+  .slider-container {
     max-width: 1920px;
     display: block;
     margin-left: auto;
@@ -285,23 +327,11 @@ section {
 }
 
 @media (min-width: 760px) {
-  .contenedor_slider_index {
-    max-height: 100vh;
-  }
-
-  .slider_index,
-  .slider_index img {
+  .slider-container {
     height: 100vh;
   }
 
-  .slider_btn_prev_index {
-    left: 30px;
-  }
-
-  .slider_btn_next_index {
-    right: 30px;
-  }
-
+  /*Texto*/
   .txtslider_index {
     display: flex;
     flex-direction: column;
@@ -340,19 +370,26 @@ section {
   }
 
   /*Dots*/
-  /*Dots*/
-  /*Dots*/
-  .contenedor_slider_index .dots {
-    right: 15px;
+  .dots_slider{
+    right: 25px;
   }
 
-  .contenedor_slider_index .dots li {
-    width: 10px;
-    height: 10px;
-    margin: 10px;
+  .dots_slider .dot {
+    width: 12px;
+    height: 12px;
+    margin-bottom: 22px;
   }
 
-  .contenedor_slider_index .dots li.active {
-    width: 10px;
+  .dots_slider .active {
+    width: 12px;
+  }
+
+  /*Botones Next y Prev*/
+  .span.prev {
+    left: 30px;
+  }
+
+  .span.next {
+    right: 30px;
   }
 }

@@ -438,45 +438,31 @@
       </section>
 
       <!--Slider de 4 fotos-->
-      <section class="contenedor_slider_index">
-
+      <section class="slider-container">
         <div class="txt_slider_arquitectura" id="txt_slider_index">
           <h2>Arquitectura en contraste</h2>
           <p>Herencia verde y modernidad gris</p>
         </div>
-
-
-        <div class="slider_index" id="slider_index">
-          <div class="slider_section_index" id="slider_section_index1">
-            <img src="images/arquitectura/architecture-8.jpg" alt="Fotografía casa antigua" />
-          </div>
-          <div class="slider_section_index" id="slider_section">
-            <img src="images/arquitectura/architecture-9.jpg" alt="Fotografía de techo de centro comercial" />
-          </div>
-          <div class="slider_section_index">
-            <img src="images/arquitectura/architecture-10.jpg" alt="Fotografía casa quinta de color rosado" /></a>
-          </div>
-          <div class="slider_section_index">
-            <img src="images/arquitectura/architecture-11.jpg" alt="Fotografía rampa de subida y de bajada" /></a>
-          </div>
+  
+        <div class="slider">
+          <img src="images/arquitectura/architecture-8.jpg" alt="Fotografía casa antigua" class="active">
+          <img src="images/arquitectura/architecture-9.jpg" alt="Fotografía de techo de centro comercial">
+          <img src="images/arquitectura/architecture-10.jpg" alt="Fotografía casa quinta de color rosado" >
+          <img src="images/arquitectura/architecture-11.jpg" alt="Fotografía rampa de subida y de bajada">
         </div>
-
-        <!--button prev and next-->
-        <div class="slider_btn_prev_index" id="slider_btn_prev_index">
-          &#60;
+  
+        <div class="buttons">
+          <span class="next">&#10095;</span>
+          <span class="prev">&#10094;</span>
         </div>
-        <div class="slider_btn_next_index" id="slider_btn_next_index">
-          &#62;
+  
+        <div class="dots_slider">
+          <div class="dot active" attr='0' onclick="switchImage(this)"></div>
+          <div class="dot" attr='1' onclick="switchImage(this)"></div>
+          <div class="dot" attr='2' onclick="switchImage(this)"></div>
+          <div class="dot" attr='3' onclick="switchImage(this)"></div>
         </div>
-
-        <!-- dots (if 5 items => 5 dots)-->
-        <ul class="dots">
-          <li class="active"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-
+  
       </section>
 
     </div>
@@ -537,7 +523,7 @@
   <script src="js/menu.js"></script>
   <script src="js/headerscroll.js"></script>
   <script src="js/scroll_index1.js"></script>
-  <script src="js/slider.js"></script>
+  <script src="js/slide.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 

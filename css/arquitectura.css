@@ -232,25 +232,20 @@ header .linea-3 {
 
 /*Arreglo slider modo dispositivo*/
 
-.contenedor_slider_index {
+.slider-container {
   width: 95%;
   max-height: 65vh;
   margin-top: 50px;
   overflow: hidden;
+  border-radius: 25px;
 }
 
-.slider_index {
-  width: 400%;
-  height: 65vh;
+.slider {
+  border-radius: 25px;
 }
 
-.slider_section_index {
-  width: 95%;
-}
-
-.slider_index img {
-  width: 100%;
-  height: 65vh;
+.slider img {
+  max-height: 65vh;
   border-radius: 25px;
 }
 
@@ -268,6 +263,7 @@ header .linea-3 {
   left: 15px; 
   transform: none;
   text-align: left;
+  z-index: 1;
 }
 
 .txt_slider_arquitectura h2 {
@@ -278,9 +274,7 @@ header .linea-3 {
   line-height: 30px;
   color: #fff;
   font-family: Rached;
-  background-color: rgba(0, 0, 0, 0.281);
-  backdrop-filter: blur(8px);
-  border-radius: 15px;
+  background-color: rgba(236, 179, 126, 0.774);
   padding: 15px;
   letter-spacing: 5px;
 }
@@ -297,33 +291,19 @@ header .linea-3 {
   margin-left: 10px;
 }
 
-.contenedor_slider_index .dots {
-  bottom: 0px;
-  left: 90%;
-  width: 10%;
-  height: 40%;
-  flex-direction: column-reverse;
-  z-index: 0;
+/*Dots*/
+/*Dots*/
+.dots_slider .dot {
+  width: 13px;
+  height: 13px;
+  border: 1px solid #9e9e9ee8;
+  background-color: rgba(252, 252, 252, 0.616);
 }
 
-.contenedor_slider_index .dots li {
-  background-color: #fffefe8f;
-  width: 15px;
-  height: 15px;
-  margin-bottom: -50px;
+.dots_slider .active {
+  background-color: #ffffff;
 }
 
-.contenedor_slider_index .dots li.active {
-  width: 15px;
-  background-color: rgba(155, 154, 154, 0.596);
-  position: relative;
-  border-radius: 50%;
-  border: 2px solid rgb(255, 255, 255);
-}
-
-.contenedor_slider_index .dots li.active::before {
-  animation: none;
-}
 
 /*Fin slider modo dispositivo*/
 
@@ -371,7 +351,7 @@ header .linea-3 {
     margin-left: 0px;
   }
 
-  .contenedor_slider_index .dots {
+  .dots_slider {
     bottom: 20px;
     left: 88%;
     width: 10%;
@@ -536,26 +516,24 @@ header .linea-3 {
 
   /*Arreglo slider modo dispositivo*/
 
-.contenedor_slider_index {
+.slider-container {
     width: 50%;
     max-height: 900px;
     margin-top: 50px;
     overflow-y: hidden;
   }
   
-  .slider_index {
-    height: 85vh;
-    max-height: 900px;
-  }
-  
-  
-  .slider_index img {
+  .slider img {
     height: 85vh;
     max-height: 900px;
   }
   
   /*Texto*/
-  
+  .txt_slider_arquitectura{
+    margin-left: 25px;
+    margin-bottom: 20px;
+  }
+
   .txt_slider_arquitectura h2 {
     width: 360px;
     font-size: 50px;
@@ -568,13 +546,11 @@ header .linea-3 {
     margin-left: 15px;
   }
 
-  .contenedor_slider_index .dots {
-    left: 93%;
+  .dots_slider .dot {
+    width: 15px;
+    height: 15px;
   }
 
-  .contenedor_slider_index .dots li {
-    margin-bottom: -60px;
-  }
   /*Fin slider modo dispositivo*/
 
 }

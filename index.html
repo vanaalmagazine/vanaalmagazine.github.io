@@ -334,12 +334,13 @@
   <!--Cuerpo-->
   <main>
     <!--Slider-->
-    <section class="contenedor_slider_index">
+    <section class="slider-container">
       <div class="txtslider_index" id="txt_slider_index">
-          <h2 class="titulo_1">FOTOGRAFIA & <span class="titulo_2">WEB DE LUJO</span></h2>
-          <span class="titulo_3">EL ARTE DE SEDUCIR A TUS CLIENTES</span> 
+        <h2 class="titulo_1">FOTOGRAFIA & <span class="titulo_2">WEB DE LUJO</span></h2>
+        <span class="titulo_3">EL ARTE DE SEDUCIR A TUS CLIENTES</span>
         <p>
-          Somos artistas visuales, creamos páginas web y fotografías que reflejan la esencia y el valor de tu marca, con un estilo distinguido y exclusivo.
+          Somos artistas visuales, creamos páginas web y fotografías que reflejan la esencia y el valor de tu
+          marca, con un estilo distinguido y exclusivo.
         </p>
         <a id="boton_slider" href="https://wa.me/573028141668" target="blank">Pedir una cotización</a>
       </div>
@@ -350,37 +351,25 @@
 
       <div class="degradado_slider"></div>
 
-      <div class="slider_index" id="slider_index">
-        <div class="slider_section_index">
-          <img src="images/banner/banner-1.jpg"
-            alt="Fotografía de producto de un perfume color negro en el agua color verde oscuro." />
-        </div>
-        <div class="slider_section_index" id="slider_section">
-          <img src="images/banner/banner-2.jpg"
-            alt="Portada editorial modelo con traje de paño color verde y gafas oscuras." />
-        </div>
-        <div class="slider_section_index">
-          <img src="images/banner/banner-3.jpg" alt="Fotografía de producto de un reloj negro con manecillas azules." />
-        </div>
-        <div class="slider_section_index">
-          <img src="images/banner/banner-4.jpg" alt="Portada editorial mujer elegante saliendo del teatro." />
-        </div>
+      <div class="slider">
+        <img src="images/slide/banner-1.jpg" alt="" class="active">
+        <img src="images/slide/banner-2.jpg" alt="">
+        <img src="images/slide/banner-3.jpg" alt="">
+        <img src="images/slide/banner-4.jpg" alt="">
       </div>
 
-      <div class="slider_btn_prev_index" id="slider_btn_prev_index">
-        &#60;
-      </div>
-      <div class="slider_btn_next_index" id="slider_btn_next_index">
-        &#62;
+      <div class="buttons">
+        <span class="next">&#10095;</span>
+        <span class="prev">&#10094;</span>
       </div>
 
-      <!-- dots (if 5 items => 5 dots)-->
-      <ul class="dots">
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <div class="dots_slider">
+        <div class="dot active" attr='0' onclick="switchImage(this)"></div>
+        <div class="dot" attr='1' onclick="switchImage(this)"></div>
+        <div class="dot" attr='2' onclick="switchImage(this)"></div>
+        <div class="dot" attr='3' onclick="switchImage(this)"></div>
+      </div>
+
     </section>
 
     <!--Paquetes-->
@@ -424,7 +413,9 @@
                 <li class="quetraetexto">Página web + 20 fotos</li>
                 <p class="description_costos">$ 1.599.000<br><del>$ 2.000.000</del></p>
                 <p class="rebaja">REBAJA 20% solo enero</p>
-                <a href="https://pay.vanaal.us/1yK6aPv3sQ8mLxHtWuRcZgD4fAqG2eE7jB9oI1nU5lM8aPv3sQ8mLxHtWuRcZgD4fAqG2eE7jB9oI1nU5l.html">Aprovechar oferta</a>
+                <a
+                  href="https://pay.vanaal.us/1yK6aPv3sQ8mLxHtWuRcZgD4fAqG2eE7jB9oI1nU5lM8aPv3sQ8mLxHtWuRcZgD4fAqG2eE7jB9oI1nU5l.html">Aprovechar
+                  oferta</a>
                 <p class="pagasalrecibir">Pagas solo el 60% al inicio</p>
                 <div class="caracteristicas">
                   <p class="txt_caract">Características</p>
@@ -441,10 +432,14 @@
                     <li><span class="negrita">Hosting gratis</span> por un año</li>
                     <li>Posicionamiento SEO</li><br>
                     <li class="cambiodecolor">Las fotos son de productos y de la marca</li>
-                    <li class="cambiodecolor">El diseño de la página se crea tras un estudio de la marca y la competencia</li>
-                    <li class="cambiodecolor">El plazo de entrega es de un máximo de 15 días a partir de la realización de la sesión fotográfica</li>
-                    <li class="cambiodecolor">La sesión de fotos se puede realizar a domicilio o en nuestras instalaciones.</li>
-                    <li class="cambiodecolor2">No ofrecemos el servicio de domicilio en zonas de riesgo o de difícil acceso de Bogotá</li>
+                    <li class="cambiodecolor">El diseño de la página se crea tras un estudio de la marca y la
+                      competencia</li>
+                    <li class="cambiodecolor">El plazo de entrega es de un máximo de 15 días a partir de la realización
+                      de la sesión fotográfica</li>
+                    <li class="cambiodecolor">La sesión de fotos se puede realizar a domicilio o en nuestras
+                      instalaciones.</li>
+                    <li class="cambiodecolor2">No ofrecemos el servicio de domicilio en zonas de riesgo o de difícil
+                      acceso de Bogotá</li>
                   </ul>
                   <p class="ver-mas" onclick="toggleLista(this)">Ver más</p>
                 </div>
@@ -464,7 +459,9 @@
                 <li class="quetraetexto">Página web pro + 30 fotos</li>
                 <p class="description_costos">$ 2.400.000<br><del>$ 2.800.000</del></p>
                 <p class="rebaja">REBAJA 15% solo enero</p>
-                <a href="https://pay.vanaal.us/3P9jR4iU7lK2eG8tC3fW6uN1vY5qL9xV2sH7oM4pD1jR5iU8lK3eG9tC4fW7uN2vY6qL8xV3sH6oM9pD5.html">Aprovechar oferta</a>
+                <a
+                  href="https://pay.vanaal.us/3P9jR4iU7lK2eG8tC3fW6uN1vY5qL9xV2sH7oM4pD1jR5iU8lK3eG9tC4fW7uN2vY6qL8xV3sH6oM9pD5.html">Aprovechar
+                  oferta</a>
                 <p class="pagasalrecibir">Pagas solo el 60% al inicio</p>
                 <div class="caracteristicas">
                   <p class="txt_caract">Características</p>
@@ -482,10 +479,14 @@
                     <li><span class="negrita">Hosting gratis</span> por un año</li>
                     <li>Posicionamiento SEO</li><br>
                     <li class="cambiodecolor">Las fotos son de productos y de la marca</li>
-                    <li class="cambiodecolor">El diseño de la página se crea tras un estudio de la marca y la competencia</li>
-                    <li class="cambiodecolor">El plazo de entrega es de un máximo de 20 días a partir de la realización de la sesión fotográfica</li>
-                    <li class="cambiodecolor">La sesión de fotos se puede realizar a domicilio o en nuestras instalaciones.</li>
-                    <li class="cambiodecolor2">No ofrecemos el servicio de domicilio en zonas de riesgo o de difícil acceso de Bogotá</li>
+                    <li class="cambiodecolor">El diseño de la página se crea tras un estudio de la marca y la
+                      competencia</li>
+                    <li class="cambiodecolor">El plazo de entrega es de un máximo de 20 días a partir de la realización
+                      de la sesión fotográfica</li>
+                    <li class="cambiodecolor">La sesión de fotos se puede realizar a domicilio o en nuestras
+                      instalaciones.</li>
+                    <li class="cambiodecolor2">No ofrecemos el servicio de domicilio en zonas de riesgo o de difícil
+                      acceso de Bogotá</li>
                   </ul>
                   <p class="ver-mas" onclick="toggleLista(this)">Ver más</p>
                 </div>
@@ -506,7 +507,9 @@
                 <li class="quetraetexto">Página web plus + 100 fotos</li>
                 <p class="description_costos">$ 3.800.000<br><del>$ 4.000.000</del></p>
                 <p class="rebaja">REBAJA 5% solo enero</p>
-                <a href="https://pay.vanaal.us/5iU2lK7eG4tC1fW8uN3vY9qL6xV1sH4oM8pD3jR5iU2lK7eG4tC1fW8uN3vY9qL6xV1sH4oM8pD3jR5.html">Aprovechar oferta</a>
+                <a
+                  href="https://pay.vanaal.us/5iU2lK7eG4tC1fW8uN3vY9qL6xV1sH4oM8pD3jR5iU2lK7eG4tC1fW8uN3vY9qL6xV1sH4oM8pD3jR5.html">Aprovechar
+                  oferta</a>
                 <p class="pagasalrecibir">Pagas solo el 60% al inicio</p>
                 <div class="caracteristicas">
                   <p class="txt_caract">Características</p>
@@ -525,10 +528,14 @@
                     <li><span class="negrita">Hosting y dominio gratis</span> por un año</li>
                     <li>Posicionamiento SEO</li><br>
                     <li class="cambiodecolor">Las fotos son de productos y de la marca</li>
-                    <li class="cambiodecolor">El diseño de la página se crea tras un estudio de la marca y la competencia</li>
-                    <li class="cambiodecolor">El plazo de entrega es de un máximo de 30 días a partir de la realización de la sesión fotográfica</li>
-                    <li class="cambiodecolor">La sesión de fotos se puede realizar a domicilio o en nuestras instalaciones.</li>
-                    <li class="cambiodecolor2">No ofrecemos el servicio de domicilio en zonas de riesgo o de difícil acceso de Bogotá</li>
+                    <li class="cambiodecolor">El diseño de la página se crea tras un estudio de la marca y la
+                      competencia</li>
+                    <li class="cambiodecolor">El plazo de entrega es de un máximo de 30 días a partir de la realización
+                      de la sesión fotográfica</li>
+                    <li class="cambiodecolor">La sesión de fotos se puede realizar a domicilio o en nuestras
+                      instalaciones.</li>
+                    <li class="cambiodecolor2">No ofrecemos el servicio de domicilio en zonas de riesgo o de difícil
+                      acceso de Bogotá</li>
                   </ul>
                   <p class="ver-mas" onclick="toggleLista(this)">Ver más</p>
                 </div>
@@ -549,7 +556,9 @@
                 <li class="quetraetexto">Página web</li>
                 <p class="description_costos">$ 999.000<br><del>$ 1.200.000</del></p>
                 <p class="rebaja">REBAJA 17% solo ener</p>
-                <a href="https://pay.vanaal.us/7aB5yZ8qL1xV9sH4oM7pD2jR6iU3lK8eG2tC9fW1uN4vY6qL1xV9sH4oM7pD2jR6iU3lK8eG2tC9fW1uN4vY6.html">Aprovechar oferta</a>
+                <a
+                  href="https://pay.vanaal.us/7aB5yZ8qL1xV9sH4oM7pD2jR6iU3lK8eG2tC9fW1uN4vY6qL1xV9sH4oM7pD2jR6iU3lK8eG2tC9fW1uN4vY6.html">Aprovechar
+                  oferta</a>
                 <p class="pagasalrecibir">Pagas solo el 60% al inicio</p>
                 <div class="caracteristicas">
                   <p class="txt_caract">Características</p>
@@ -563,7 +572,8 @@
                     <li><span class="negrita">Mapa de Google</span></li>
                     <li><span class="negrita">Hosting gratis</span> por un año</li>
                     <li>Posicionamiento SEO</li><br>
-                    <li class="cambiodecolor">El diseño de la página se crea tras un estudio de la marca y la competencia</li>
+                    <li class="cambiodecolor">El diseño de la página se crea tras un estudio de la marca y la
+                      competencia</li>
                     <li class="cambiodecolor">El plazo de entrega es de un máximo de 10 días</li>
                   </ul>
                   <p class="ver-mas" onclick="toggleLista(this)">Ver más</p>
@@ -679,7 +689,8 @@
         <div class="textoproducto">
           <h1>NUESTRO ARTE</h1>
           <p class="txtproducto_1">
-            Cada creación es una expresión de nuestras visión. No ofrecemos simplemente una fotografía, ofrecemos una conversación silenciosa entre el espectador y el objeto.
+            Cada creación es una expresión de nuestras visión. No ofrecemos simplemente una fotografía, ofrecemos una
+            conversación silenciosa entre el espectador y el objeto.
           </p>
           <a class="botonproducto" href="https://wa.me/573028141668" target="blank">Contáctanos</a>
         </div>
@@ -832,7 +843,7 @@
 
   <!--Javascript-->
   <script src="js/menu.js"></script>
-  <script src="js/slider.js"></script>
+  <script src="js/slide.js"></script>
   <script src="js/scroll_index.js"></script>
   <script src="js/lightbox.js"></script>
   <script src="js/scroll_carrusel.js"></script>
