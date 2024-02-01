@@ -11,7 +11,7 @@ body.noscroll2 {
   overflow: hidden;
 }
 
-/*Comienzo grid scroll fotos 2*/
+/*Comienzo Paquetes*/
 
 .paquetes {
   max-width: 1920px;
@@ -116,13 +116,14 @@ body.noscroll2 {
   overflow: scroll;
   overflow-y: hidden;
   list-style: none;
-  margin-left: 10px;
-  padding-left: 10px;
+  margin-left: 0px;
+  padding-left: 30px;
+  padding-top: 20px;
 }
 
-.button-next1 {
+.button-next1, .button-prev1 {
   position: absolute;
-  right: 15px;
+  right: 10px;
   width: 40px;
   height: 40px;
   color: rgb(42, 42, 43);
@@ -132,6 +133,10 @@ body.noscroll2 {
   padding-top: 0px;
   z-index: 1;
 }
+
+.button-prev1{
+  left: 10px;
+} 
 
 .cont_carrusel_scroll_1 {
   display: flex;
@@ -165,6 +170,23 @@ body.noscroll2 {
   padding-right: 40px;
   padding-top: 15px;
   margin-bottom: 30px;
+}
+
+/*Titulo Más vendid*/
+.mas_vendido{
+  color: rgb(231, 88, 131);;
+  background-color: rgb(243, 223, 226);;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 30px;
+  width: 200px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  padding: 10px;
 }
 
 /*Titulo de la card*/
@@ -268,7 +290,8 @@ body.noscroll2 {
   margin-top: 20px;
   font-family: Jimmylight;
   font-size: 16px;
-  color: #616363;
+  color: #3f4141;
+  font-weight: bold;
   border-bottom: 2px solid rgb(181, 214, 206);
 }
 
@@ -279,7 +302,7 @@ body.noscroll2 {
 }
 
 .caracteristicas ul {
-  max-height: 118px;
+  max-height: 139px;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
   margin-top: 15px;
@@ -288,9 +311,10 @@ body.noscroll2 {
 .caracteristicas .ver-mas {
   text-align: center; /* Centra el texto en el contenedor */
   cursor: pointer;
-  color: rgb(71, 72, 73);
+  color: rgb(36, 37, 37);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 16px;
+  font-weight: bold;
   margin-top: 5px;
   margin-bottom: 15px;
   position: relative;
@@ -323,6 +347,7 @@ body.noscroll2 {
   font-family: Jimmylight;
   font-size: 16px;
   letter-spacing: 0.4px;
+  margin-bottom: 10px;
 }
 
 .lista_caract li {
@@ -366,7 +391,9 @@ body.noscroll2 {
   color: rgb(58, 59, 59);
 }
 
-/*Producto modo dispositivo*/
+/*Fin de paquetes*/
+
+/*Comienzo banner producto*/
 .contenedorproducto {
   position: relative;
   height: 90vh;
@@ -496,6 +523,17 @@ body.noscroll2 {
     letter-spacing: 0.3px;
     width: 90%;
   }
+
+  .button-next1, .button-prev1 {
+    width: 30px;
+    height: 30px;
+    right: 2px;
+  }
+  
+  .button-prev1{
+    left: 2px;
+  }   
+  
 }
 
 @media screen and (max-width: 350px) {
@@ -504,7 +542,7 @@ body.noscroll2 {
   }
 }
 
-/*Artistas y productos inicio modo pc*/
+/*Banner modo pc*/
 
 @media (min-width: 1400px) {
   .contenedorproducto {
@@ -515,13 +553,18 @@ body.noscroll2 {
 /*Modo pc*/
 
 @media (min-width: 1100px) {
-  /*Comienzo grid scroll fotos 2*/
+  /*Comienzo Paquetes */
 
   .paquetes {
     display: grid;
     grid-template-columns: 20% 80%;
     padding-top: 50px;
     padding-bottom: 40px;
+  }
+
+  .cont_carrusel_scroll {
+    margin-left: 50px;
+    padding-right: 100px;
   }
 
   .texto_paquetes {
@@ -546,6 +589,10 @@ body.noscroll2 {
     height: 53px;
     font-size: 60px;
   }
+
+  .button-prev1{
+    display: none;
+  }   
 
   .carrusel_scroll {
     padding-top: 40px;
@@ -578,9 +625,11 @@ body.noscroll2 {
   .lista_caract {
     font-size: 15px;
   }
+  /*Fin contenedor paquetes*/
 }
 
 @media (min-width: 700px) {
+  /*Banner de producto*/
   .contenedorproducto {
     width: 100%;
     margin-left: auto;
