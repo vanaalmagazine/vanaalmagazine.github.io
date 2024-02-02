@@ -71,6 +71,10 @@ body.noscroll2 {
   line-height: 1.4;
 }
 
+.texto_paquetes p {
+  margin-bottom: 30px;
+}
+
 .texto_paquetes ol {
   letter-spacing: 0px;
   padding-left: 20px;
@@ -78,21 +82,47 @@ body.noscroll2 {
   overflow: hidden;
   transition: max-height 0.5s ease-out;
   margin-top: 15px;
+  font-family: Jimmylight;
+  font-size: 17px;
+  letter-spacing: 0.4px;
 }
 
-.ver-mas {
+.texto_paquetes .ver-mas {
   cursor: pointer;
   color: rgb(255, 255, 255);
   text-decoration: underline;
   text-underline-offset: 0.2em;
+  font-family: TestRegular;
+  letter-spacing: 1.2px;
+  font-size: 17px;
+  margin-bottom: -10px;
+  position: relative;
+  text-decoration: none;
+  display: inline-block; /* Asegura que la línea se expanda solo al ancho del texto */
+  width: 100%; /* Ocupa el ancho completo del contenedor */
+  padding-bottom: 3px;
 }
 
-.ver-mas:hover {
-  color: #d2d6d4;
+.texto_paquetes .ver-mas:before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  bottom: -3px;
+  left: 18%;
+  transition: width 0.3s, left 0.3s;
+  transform-origin: center;
+}
+
+.texto_paquetes .ver-mas:hover:before {
+  width: 55%;
+  left: 0%;
 }
 
 .texto_paquetes ol li {
   list-style-type: disc;
+  margin-top: 20px;
 }
 
 .carrusel_scroll {
@@ -121,8 +151,9 @@ body.noscroll2 {
   padding-top: 20px;
 }
 
-.button-next1, .button-prev1 {
- position: absolute;
+.button-next1,
+.button-prev1 {
+  position: absolute;
   right: 10px;
   width: 40px;
   height: 40px;
@@ -133,9 +164,9 @@ body.noscroll2 {
   z-index: 1;
 }
 
-.button-prev1{
+.button-prev1 {
   left: 10px;
-} 
+}
 
 .cont_carrusel_scroll_1 {
   display: flex;
@@ -172,9 +203,9 @@ body.noscroll2 {
 }
 
 /*Titulo Más vendid*/
-.mas_vendido{
-  color: rgb(231, 88, 131);;
-  background-color: rgb(243, 223, 226);;
+.mas_vendido {
+  color: rgb(231, 88, 131);
+  background-color: rgb(243, 223, 226);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   font-weight: bold;
@@ -523,16 +554,16 @@ body.noscroll2 {
     width: 90%;
   }
 
-  .button-next1, .button-prev1 {
+  .button-next1,
+  .button-prev1 {
     width: 30px;
     height: 30px;
     right: 2px;
   }
-  
-  .button-prev1{
+
+  .button-prev1 {
     left: 2px;
-  }   
-  
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -556,22 +587,35 @@ body.noscroll2 {
 
   .paquetes {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 23% 77%;
     padding-top: 50px;
     padding-bottom: 40px;
   }
 
   .cont_carrusel_scroll {
-    margin-left: 50px;
+    margin-left: 30px;
     padding-right: 100px;
   }
 
   .texto_paquetes {
-    width: 75%;
+    width: 330px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 30px;
   }
+
+  .texto_paquetes .ver-mas {
+    font-size: 19px;
+  }
+
+  .texto_paquetes .ver-mas:before {
+    left: 20%;
+  }
+  
+  .texto_paquetes .ver-mas:hover:before {
+    width: 65%;
+  }
+  
 
   .texto_paquetes h1,
   .texto_paquetes h2 {
@@ -582,6 +626,10 @@ body.noscroll2 {
     margin-top: -7px;
   }
 
+  .texto_paquetes ol {
+    max-height: 100%;
+  }
+
   .button-next1 {
     right: 20px;
     width: 53px;
@@ -589,9 +637,9 @@ body.noscroll2 {
     font-size: 60px;
   }
 
-  .button-prev1{
+  .button-prev1 {
     display: none;
-  }   
+  }
 
   .carrusel_scroll {
     padding-top: 40px;
