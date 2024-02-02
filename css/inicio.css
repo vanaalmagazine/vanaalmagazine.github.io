@@ -40,7 +40,7 @@ body.noscroll2 {
   width: 85%;
   max-width: 450px;
   padding-top: 50px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   margin-left: 7%;
 }
 
@@ -72,7 +72,7 @@ body.noscroll2 {
 }
 
 .texto_paquetes p {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .texto_paquetes ol {
@@ -577,7 +577,7 @@ body.noscroll2 {
 
 /*Modo pc*/
 
-@media (min-width: 1100px) {
+@media (min-width: 1300px) {
   /*Comienzo Paquetes */
 
   .paquetes {
@@ -599,6 +599,10 @@ body.noscroll2 {
     padding-left: 30px;
   }
 
+  .texto_paquetes p {
+    margin-bottom: 30px;
+  }
+
   .texto_paquetes .ver-mas {
     font-size: 19px;
   }
@@ -611,7 +615,7 @@ body.noscroll2 {
   .texto_paquetes .ver-mas:before {
     left: 20%;
   }
-  
+
   .texto_paquetes .ver-mas:hover:before {
     width: 65%;
     left: 0%;
