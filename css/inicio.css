@@ -106,18 +106,13 @@ body.noscroll2 {
 .texto_paquetes .ver-mas:before {
   content: "";
   position: absolute;
-  width: 20%;
+  width: 50%;
   height: 1px;
   background-color: rgb(255, 255, 255);
   bottom: -3px;
-  left: 18%;
+  left: 0%;
   transition: width 0.3s, left 0.3s;
   transform-origin: center;
-}
-
-.texto_paquetes .ver-mas:hover:before {
-  width: 55%;
-  left: 0%;
 }
 
 .texto_paquetes ol li {
@@ -609,13 +604,18 @@ body.noscroll2 {
   }
 
   .texto_paquetes .ver-mas:before {
+    width: 20%;
+    left: 16%;
+  }
+
+  .texto_paquetes .ver-mas:before {
     left: 20%;
   }
   
   .texto_paquetes .ver-mas:hover:before {
     width: 65%;
+    left: 0%;
   }
-  
 
   .texto_paquetes h1,
   .texto_paquetes h2 {
@@ -624,10 +624,6 @@ body.noscroll2 {
 
   .texto_paquetes h2 {
     margin-top: -7px;
-  }
-
-  .texto_paquetes ol {
-    max-height: 100%;
   }
 
   .button-next1 {
