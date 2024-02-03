@@ -587,10 +587,6 @@ body.noscroll2 {
     padding-bottom: 40px;
   }
 
-  .texto_paquetes ol {
-    max-height: 100%;
-  }
-
   .cont_carrusel_scroll {
     margin-left: 30px;
     padding-right: 100px;
