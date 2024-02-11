@@ -1,4 +1,8 @@
 /* header */
+.titulo{
+  position: absolute;
+  opacity: 0;
+}
 
 header {
   display: flex;

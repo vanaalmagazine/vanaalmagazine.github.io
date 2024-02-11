@@ -44,7 +44,7 @@ body.noscroll2 {
   margin-left: 7%;
 }
 
-.texto_paquetes h1,
+.texto_paquetes .nuestrostxt,
 .texto_paquetes h2 {
   font-family: Rached;
   font-size: 33px;
@@ -55,6 +55,10 @@ body.noscroll2 {
 
 .texto_paquetes h2 {
   text-decoration: underline;
+}
+
+.texto_paquetes .nuestrostxt{
+  text-decoration: none;
 }
 
 .texto_paquetes_subtitulo {
@@ -479,7 +483,7 @@ body.noscroll2 {
   color: white;
 }
 
-.textoproducto h1 {
+.textoproducto h2 {
   font-family: TestRegular;
   font-size: 35px;
   width: 100%;
@@ -534,7 +538,7 @@ body.noscroll2 {
     margin-right: 8px;
   }
 
-  .textoproducto h1 {
+  .textoproducto h2 {
     font-size: 25px;
     width: 100%;
   }
@@ -621,7 +625,7 @@ body.noscroll2 {
     left: 0%;
   }
 
-  .texto_paquetes h1,
+  .texto_paquetes .nuestrostxt,
   .texto_paquetes h2 {
     font-size: 50px;
   }
@@ -690,7 +694,7 @@ body.noscroll2 {
     margin-left: 70px;
   }
 
-  .textoproducto h1 {
+  .textoproducto h2 {
     font-size: 45px;
     width: 80%;
     line-height: 0.6;

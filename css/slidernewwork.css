@@ -62,7 +62,7 @@
   font-size: 15px;
 }
 
-.textonewwork h1 {
+.textonewwork h3 {
   font-family: "Merriweather Sans", sans-serif;
   font-size: 22px;
   margin-bottom: 10px;
@@ -157,7 +157,7 @@
     -moz-transform: rotate(-90deg);
   }
 
-  .textonewwork h1 {
+  .textonewwork h3 {
     position: absolute;
     bottom: 100px;
     left: 10px;
@@ -166,7 +166,7 @@
   }
 
   .textonewwork p,
-  .textonewwork h1 {
+  .textonewwork h3 {
     margin-left: 19%;
   }
 
@@ -201,7 +201,7 @@
   }
 
   .textonewwork p,
-  .textonewwork h1 {
+  .textonewwork h3 {
     margin-left: 32%;
   }
 
