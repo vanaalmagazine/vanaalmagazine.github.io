@@ -1,3 +1,6 @@
+var fechaActual = new Date();
+var añoActual = fechaActual.getFullYear();
+var actualizarfecha = añoActual;
 /*! @license ScrollReveal v4.0.9
 
 	Copyright 2021 Fisssion LLC.

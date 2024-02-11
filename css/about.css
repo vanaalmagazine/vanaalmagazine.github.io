@@ -47,7 +47,7 @@ body {
 .contenidoabout p {
   font-family: "BodoniMT";
   font-size: 16px;
-  text-decoration: overline;
+  text-decoration: underline;
 }
 
 #about {
@@ -90,7 +90,9 @@ body {
   }
 
   .contenidoabout h2 {
+    margin-top: -10px;
     font-size: 80px;
+    padding-top: 0;
   }
 
   .contenidoabout p {
@@ -98,6 +100,6 @@ body {
   }
 
   #about {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }

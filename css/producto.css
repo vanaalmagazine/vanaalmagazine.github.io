@@ -36,7 +36,7 @@ body.noscroll2 {
   width: 100%;
   max-width: 1920px;
   height: 100vh;
-  background: linear-gradient(to bottom, #252e3f, #01071d);
+  background: black;
   position: absolute;
   z-index: -90;
 }
