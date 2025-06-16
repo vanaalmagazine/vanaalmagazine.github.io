@@ -11,7 +11,7 @@
   <meta name="description"
     content="El poder de la moda, la sofisticación y la elegancia son revelados a través de nuestra visión fotográfica editorial." />
   <!--Etiqueta Canonical-->
-  <link rel="canonical" href="https://www.vanaalmagazine.github.io" />
+  <link rel="canonical" href="https://vanaalmagazine.github.io" />
   <!--Favicon-->
   <link rel="icon" type="image/ico" href="images/logotype/favicon.ico" />
   <!--Author-->
@@ -24,8 +24,11 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/arreglo_header.css" />
   <link rel="stylesheet" href="css/inicio.css">
+  <link rel="stylesheet" href="css/carrusel_inicio.css">
   <!--Script efecto scroll-->
   <script src="js/scrollreveal.js"></script>
+  <!--Deslizar tactil-->
+  <script src="js/swiped-events.min.js"></script>
   <!--Bloquear clic derecho-->
   <script type="text/javascript">
     document.oncontextmenu = function () {
@@ -316,7 +319,8 @@
         <span class="titulo_3"><i>MAGAZINE DIGITAL</i></span>
         <p>
           Creamos fotografías que habitan el universo del arte contemporáneo.
-          Como plataforma editorial, celebramos la moda, el lujo y la elegancia a través de nuestra identidad visual artística
+          Como plataforma editorial, celebramos la moda, el lujo y la elegancia a través de nuestra identidad visual
+          artística
 
         </p>
         <a id="boton_slider" href="about">About us</a>
@@ -367,8 +371,8 @@
 
         <div class="chequear_porfolio">
           <p>Chequea nuestro porfolio<br />
-            <a href="producto">Producto </a>|
             <a href="editorial">Editorial </a>|
+            <a href="producto">Producto </a>|
             <a href="arquitectura">Arquitectura</a>
           </p>
         </div>
@@ -404,8 +408,8 @@
 
         <div class="chequear_porfolio">
           <p>Chequea nuestro porfolio<br />
-            <a href="producto">Producto </a>|
             <a href="editorial">Editorial </a>|
+            <a href="producto">Producto </a>|
             <a href="arquitectura">Arquitectura</a>
           </p>
         </div>
@@ -439,6 +443,67 @@
         </div>
       </div>
     </nav>
+
+    <!--Carrusel imagenes editoriales-->
+    <div class="contenedor_carrusel">
+      <div class="textocarrusel">
+        <h2>New Works</h2>
+        <p>Gallery
+          <script>document.write(actualizarfecha)</script>
+        </p>
+      </div>
+      <div class="carrusel_scroll">
+
+        <div class="cont_carrusel_scroll">
+
+          <img class="carrusel_img" id="sbutton1" src="images/carrusel/1.jpg"
+            alt="Black and white photograph of man with butterflies on hands and head.">
+          <img class="carrusel_img" id="sbutton1" src="images/carrusel/2.jpg"
+            alt="Black and white photograph of an entity covered by a robe, seated on a chair, in front of which hands hold an open book from which butterflies are emerging.">
+          <img class="carrusel_img" id="sbutton1" src="images/carrusel/3.jpg"
+            alt="Black and white photograph of a nun in front of a giant window, holding a candle, surrounded by butterflies.">
+          <img class="carrusel_img" id="sbutton1" src="images/carrusel/4.jpg"
+            alt="Black and white portrait photograph of a man wearing a tunic on his head, with his eyes closed and a chain in his hands.">
+          <img class="carrusel_img" id="sbutton1" src="images/carrusel/5.jpg"
+            alt="Black and white photograph of a man with his face completely covered by a blanket.">
+          <img class="carrusel_img" id="sbutton1" src="images/carrusel/6.jpg"
+            alt="Black and white photograph of man with tunic on his face and a chain in his hand.">
+          <img class="carrusel_img" id="sbutton1" src="images/carrusel/7.jpg"
+            alt="Black and white photograph of a nun covering her face with her hands.">
+          <img class="carrusel_img" id="sbutton1" src="images/carrusel/8.jpg"
+            alt="Black and white photograph nun screaming in despair.">
+          <img class="carrusel_img" id="sbutton1" src="images/carrusel/9.jpg"
+            alt="Black and white photograph of a nun covering her face with one hand and an open bible in the other hand.">
+          <img class="carrusel_img" id="sbutton1" src="images/carrusel/10.jpg"
+            alt="Black and white photograph of a man coming out of some canvases that are in the air.">
+          <img class="carrusel_img" id="sbutton1" src="images/carrusel/11.jpg"
+            alt="Black and white photograph of a man praying with a robe on his face and a chain in his hands.">
+          <img class="carrusel_img" id="sbutton1" src="images/carrusel/12.jpg"
+            alt="Black and white photograph of a man with a tunic on his head, praying with his hands on his face.">
+          <img class="carrusel_img" id="sbutton1" src="images/carrusel/13.jpg"
+            alt="Black and white photograph of praying man wearing a tunic, looking towards the sky.">
+          <img class="carrusel_img" id="sbutton1" src="images/carrusel/14.jpg"
+            alt="Black and white photograph nun in front of a giant window, holding an owl in her hand.">
+          <img class="carrusel_img" id="sbutton1" src="images/carrusel/15.jpg"
+            alt="Black and white photograph nun in front of a giant window praying.">
+          <img class="carrusel_img" id="sbutton1" src="images/carrusel/16.jpg"
+            alt="Black and white photograph of man behind canvases that are in the air.">
+          <img class="carrusel_img" id="sbutton1" src="images/carrusel/17.jpg"
+            alt="Black and white photograph of a man looking at the camera behind some fabrics that are in the air.">
+          
+        </div>
+
+      </div>
+      <section id="lightbox">
+        <div id="contenedor-lightbox">
+          <img id="img-activa" src="images/carrusel/1.JPG" alt="galeria de imagenes">
+          <button id="btn-cierra" type="button">x</button>
+          <button id="btn-retrocede" type="button">&lt;</button>
+          <button id="btn-adelanta" type="button">&gt;</button>
+        </div>
+      </section>
+
+    </div>
 
     <!--New Works-->
     <section class="newworks">
@@ -508,13 +573,12 @@
       </div>
 
       <div class="textonewwork">
-        <h2>NEW_WORKS</h2>
-        <h3>MAGAZINE
-          <script>document.write(actualizarfecha)</script>
+        <h2>BLACK_WHITE</h2>
+        <h3>Nuestro universo
         </h3>
         <br />
         <p>
-          Descubre nuestras obras<br />
+          Descubre otras obras<br />
           <a href="editorial">Editorial </a>|
           <a href="producto">Producto </a>|
           <a href="arquitectura">Arquitectura</a>
@@ -603,11 +667,13 @@
   </footer>
 
   <!--Javascript-->
+  
   <script src="js/menu.js"></script>
   <script src="js/slide.js"></script>
   <script src="js/scroll_index.js"></script>
   <script src="js/scroll_carrusel.js"></script>
   <script src="js/slider_newwork.js"></script>
+  <script src="js/lightbox_dos.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

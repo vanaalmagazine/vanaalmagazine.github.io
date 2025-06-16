@@ -37,6 +37,20 @@ sr.reveal('.navslider1 p', {
     distance: '-100px'
 });
 
+/*Carrusel*/ 
+
+sr.reveal('.textocarrusel h2', {
+    duration: 2000,
+    origin: 'right',
+    distance: '-100px'
+});
+
+sr.reveal('.textocarrusel p', {
+    duration: 2000,
+    origin: 'top',
+    distance: '-100px'
+});
+
 /*Producto*/
 sr.reveal('.contenedorproducto', {
     duration: 2000,
