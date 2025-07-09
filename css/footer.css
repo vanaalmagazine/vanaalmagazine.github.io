@@ -133,6 +133,7 @@ footer .contenedorfooter .logotipofooter p {
 
 footer .copyright {
   display: flex;
+  text-align: center;
 }
 
 footer .copyright p {
