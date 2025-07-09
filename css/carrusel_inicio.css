@@ -5,7 +5,7 @@
 }
 
 /*Comienzo grid scroll fotos 2*/
-.contenedor_carrusel{
+.contenedor_carrusel {
   margin-top: 30px;
 }
 
@@ -57,11 +57,11 @@
 }
 
 .cont_carrusel_scroll::-webkit-scrollbar-thumb {
-  background-color: rgb(146, 214, 196);
+  background-color: rgb(29, 74, 136);
   border-radius: 15px;
 }
 
-.textocarrusel{
+.textocarrusel {
   margin-left: 10px;
 }
 
@@ -70,7 +70,6 @@
   font-family: Laika;
   font-size: 40px;
   letter-spacing: 3px;
-  
 }
 
 .textocarrusel p {
@@ -135,12 +134,46 @@ button {
   z-index: 101;
 }
 
+#btn-cierra:hover,
+#btn-retrocede:hover,
+#btn-adelanta:hover {
+  background: rgb(235, 235, 235);
+}
+
 #btn-cierra {
   top: 10px;
 }
 
 #btn-retrocede {
   left: 10px;
+}
+
+#lightbox .dots {
+  position: absolute;
+  bottom: 20px;
+  color: #ffffff;
+  left: 0;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+#lightbox .dots li {
+  list-style: none;
+  width: 30px;
+  height: 5px;
+  background-color: #ffffff9c;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+#lightbox .dots li.active {
+  width: 30px;
+  height: 5px;
+  background-color: rgb(29, 74, 136);
+  position: relative;
 }
 
 /*Fin Lightbox*/
@@ -154,46 +187,46 @@ button {
     font-size: 1.4rem;
   }
 
-  .carrusel_scroll{
+  .carrusel_scroll {
     min-width: 270px;
     height: 580px;
   }
 
-  .cont_carrusel_scroll{
+  .cont_carrusel_scroll {
     height: 95%;
   }
 }
 
 @media (min-width: 1400px) {
-    #contenedor-lightbox {
-      max-width: 1920px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  #contenedor-lightbox {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
 
 /*Lightbox modo pc*/
-@media (min-width: 1050px){
-  #email_txt{
+@media (min-width: 1050px) {
+  #email_txt {
     display: block;
   }
 }
 
 @media screen and (min-width: 660px) {
-  main .contenedor_carrusel{
+  main .contenedor_carrusel {
     max-width: 1600px;
     margin: auto;
     padding-top: 20px;
   }
 
-  .textocarrusel{
+  .textocarrusel {
     margin-left: 50px;
   }
 
   .textocarrusel h2 {
-    font-size: 40px;    
+    font-size: 40px;
   }
-  
+
   .textocarrusel p {
     font-size: 16px;
     padding-left: 10px;
@@ -203,6 +236,10 @@ button {
   #contenedor-lightbox img {
     width: auto;
     height: 90vh;
+  }
+
+  #lightbox .dots li {
+    margin: 10px;
   }
 
   /*Fin Lightbox*/

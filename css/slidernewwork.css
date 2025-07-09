@@ -38,7 +38,7 @@
   width: 100%;
 }
 
-.img_neworks{
+.img_neworks {
   width: 100%;
   height: 100%;
 }
@@ -80,11 +80,11 @@
 }
 
 .textonewwork p a {
-  color: rgb(245, 157, 130);
+  color: rgb(250, 204, 119);
 }
 
 .textonewwork p a:hover {
-  color: rgb(255, 194, 175);
+  color: rgb(255, 227, 175);
 }
 
 .slider_newwork_btn_prev_index,
@@ -178,11 +178,10 @@
     width: 295px;
   }
 
-
   .slider_newwork_btn_prev_index,
-.slider_newwork_btn_next_index {
-  top: 715px;
-}
+  .slider_newwork_btn_next_index {
+    top: 715px;
+  }
 
   .slider_newwork_btn_prev_index {
     right: 25%;

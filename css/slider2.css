@@ -108,11 +108,11 @@ img {
 }
 
 .chequear_porfolio p a {
-  color: rgb(5, 153, 190);
+  color: rgb(17, 103, 202);
 }
 
 .chequear_porfolio p a:hover {
-  color: rgb(32, 191, 231);
+  color: rgb(57, 145, 218);
 }
 
 @keyframes autoplay {

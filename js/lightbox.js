@@ -5,7 +5,7 @@ const btnRetrocede = document.querySelector('#btn-retrocede');
 const imagenes = document.querySelectorAll('.cont_carrusel_scroll img');
 const lightbox = document.querySelector('#lightbox');
 const imagenActiva = document.querySelector('#img-activa');
-let dots = document.querySelectorAll('#lightbox .dots li');
+let dots1 = document.querySelectorAll('#lightbox .dots li');
 //////
 
 /////
@@ -16,7 +16,7 @@ let indiceImagen = 0;
 const abreLightbox = (event) => {
 
   // Restablece la clase "active" en todos los puntos
-  dots.forEach(dot => dot.classList.remove('active'));
+  dots1.forEach(dot => dot.classList.remove('active'));
 
   imagenActiva.src = event.target.src;
   lightbox.style.display = 'flex';
@@ -24,7 +24,7 @@ const abreLightbox = (event) => {
   document.body.classList.toggle('noscroll2');
 
   // Encuentra el punto correspondiente y agrega la clase "active"
-  dots[indiceImagen].classList.add('active');
+  dots1[indiceImagen].classList.add('active');
 
   document.querySelectorAll(".cont_carrusel_scroll").forEach(el => {
     el.addEventListener("click", e => {
@@ -84,7 +84,7 @@ const adelantaImagen = () => {
   if (activeDot.nextElementSibling) {
     activeDot.nextElementSibling.classList.add('active');
   } else {
-    dots[0].classList.add('active');
+    dots1[0].classList.add('active');
   }
 
 };
@@ -110,7 +110,7 @@ window.addEventListener('keyup', function (e) {
     if (activeDot.nextElementSibling) {
       activeDot.nextElementSibling.classList.add('active');
     } else {
-      dots[0].classList.add('active');
+      dots1[0].classList.add('active');
     }
 
   }
@@ -136,7 +136,7 @@ document.addEventListener('swiped-left', function (e) {
   if (activeDot.nextElementSibling) {
     activeDot.nextElementSibling.classList.add('active');
   } else {
-    dots[0].classList.add('active');
+    dots1[0].classList.add('active');
   }
 
 });
@@ -160,7 +160,7 @@ const retrocederImagen = () => {
   if (activeDot.previousElementSibling) {
     activeDot.previousElementSibling.classList.add('active');
   } else {
-    dots[dots.length - 1].classList.add('active');
+    dots1[dots1.length - 1].classList.add('active');
   }
 };
 
@@ -184,7 +184,7 @@ window.addEventListener('keyup', function (e) {
     if (activeDot.previousElementSibling) {
       activeDot.previousElementSibling.classList.add('active');
     } else {
-      dots[dots.length - 1].classList.add('active');
+      dots1[dots1.length - 1].classList.add('active');
     }
   }
 });
@@ -207,6 +207,6 @@ document.addEventListener('swiped-right', function (e) {
   if (activeDot.previousElementSibling) {
     activeDot.previousElementSibling.classList.add('active');
   } else {
-    dots[dots.length - 1].classList.add('active');
+    dots1[dots1.length - 1].classList.add('active');
   }
 });

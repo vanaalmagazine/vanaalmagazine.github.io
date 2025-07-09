@@ -166,7 +166,7 @@ header .menu > ul > li .sub-menu {
 header .menu > ul > li.menu-item-has-children:hover {
   padding-top: 10px;
   padding-bottom: 7px;
-  border-bottom: 3px solid rgb(1, 168, 90);
+  border-bottom: 3px solid rgb(29, 74, 136);
 }
 
 header .menu > ul > li .sub-menu > ul > li {

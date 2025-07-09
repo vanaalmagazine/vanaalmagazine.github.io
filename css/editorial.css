@@ -300,7 +300,7 @@ body.noscroll2 {
 }
 
 .cont_carrusel_scroll::-webkit-scrollbar-thumb {
-  background-color: rgb(24, 172, 122);
+  background-color: rgb(29, 74, 136);
   border-radius: 15px;
 }
 
@@ -397,7 +397,7 @@ button {
 
 #lightbox .dots li.active {
   width: 60px;
-  background-color: rgb(48, 212, 157);
+  background-color: rgb(29, 74, 136);
   position: relative;
 }
 
